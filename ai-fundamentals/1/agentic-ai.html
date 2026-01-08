@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Agentic AI :: AI Fundamentals</title>
+    <link rel="prev" href="inferencing-optimization.html">
+    <link rel="next" href="ai-security-responsibility.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../..">AI Fundamentals</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ai-fundamentals" data-version="1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">AI Fundamentals</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="introduction.html">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="predictive-generative-ai.html">Predictive AI and Generative AI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="inferencing-optimization.html">Inferencing and Optimization</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="agentic-ai.html">Agentic AI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ai-security-responsibility.html">AI Security and Using AI Responsibly</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AI Fundamentals</span>
+    <span class="version">1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">AI Fundamentals</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">AI Fundamentals</a></li>
+    <li><a href="agentic-ai.html">Agentic AI</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Agentic AI</h1>
+<div class="sect2">
+<h3 id="_lesson_overview"><a class="anchor" href="#_lesson_overview"></a>Lesson overview</h3>
+<div class="paragraph">
+<p>In a previous lesson, you learned about predictive AI and generative AI. This lesson concerns agentic AI, a comparatively new form of AI in which some of the most compelling and transforming aspects of AI are being realized.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_lesson_objectives"><a class="anchor" href="#_lesson_objectives"></a>Lesson objectives</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Define agentic AI.</p>
+</li>
+<li>
+<p>Describe examples of agentic AI.</p>
+</li>
+<li>
+<p>Explain the difference between agentic AI and generative AI.</p>
+</li>
+<li>
+<p>Describe, at a high level, how Model Context Protocol (MCP) works and how it relates to agentic AI.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_what_is_agentic_ai"><a class="anchor" href="#_what_is_agentic_ai"></a>What is agentic AI?</h3>
+<div class="paragraph">
+<p>Agentic AI is an AI system designed to interact with data and tools in a way that requires minimal human intervention. With an emphasis on goal-oriented behavior, agentic AI can accomplish tasks by creating a list of steps and performing them autonomously.Unlike traditional AI models which operate within predefined constraints and require a greater degree of human intervention, agentic AI exhibits autonomy, goal-driven behavior, and adaptability. The term agentic refers to these modelsss agency, or, their capacity to act independently and purposefully.</p>
+</div>
+<div class="paragraph">
+<p>While AI has already redefined how we interact with data, automate tasks and serve customers the next phase in AI is emerging, pushing beyond content generation and predictive analytics</p>
+</div>
+<div class="paragraph">
+<p>Think of agentic AI as a way of combining automation with the creative abilities of an LLM. To bring agentic AI to practice, you create a system that provides an LLM with access to external tools and algorithms that supply instructions for how the AI agents should use those toolsThe way agents communicate with tools involves orchestration, with flows or graphs depending on the framework being used. This approach allows the LLM to 'reason' and determine the best way to answer a questionsuch as deciding whether the query can be answered with available information or whether an external search is necessary.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_what_is_an_ai_agent"><a class="anchor" href="#_what_is_an_ai_agent"></a>What is an AI agent?</h3>
+<div class="paragraph">
+<p>Think of an AI agent as an entity that sits on top of other software tools and operates them. Agentic AI can be a physical structure, a software program, or a combination of the two.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/AI_Agents_Integrate.png" alt="Title AI agents integrate models functions and tools Subtitle Gen AI models predictive AI models code functions search" width="and more Diagram" height="left to right">
+</div>
+</div>
+<div class="paragraph">
+<p>An AI agent in a robotic system might use cameras sensors and monitors to collect data about its environment, then run that information alongside software to make determinations about its next step. This is a process known as sensor fusion. Meanwhile, agentic AI in a software setting would collect data from other sources such as APIs online searches text prompts and databases that help the agents create a sense of perception and context.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_what_can_agentic_ai_do"><a class="anchor" href="#_what_can_agentic_ai_do"></a>What can agentic AI do?</h3>
+<div class="paragraph">
+<p>Generative AI applications have evolved rapidly over the last few years moving from simple use cases like text generation to more complex, multi-step workflows</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/AgenticAI_1.jpg" alt="Infographic builds across a series of images This is image 1 (of 3) Title Agentic AI Subtitle From passive tools to active decision makers 'sLevel 0" width="Repetitive tasks Follows simple predefined rules Use cases Chatbots for FAQs Level 1" height="Information Retrieval Agent">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/AgenticAI_2.jpg" alt="Infographic builds across a series of images this is image 2 (of 3). It adds Levels 2 and 3 to the infographic. Level 2" width="Task Orchestration Agents Agents autonomously orchestrate low complexity tasks in a single data environment" height="can autonomously execute tasks Use Cases Schedules meetings and sends follow-up emails within a calendar/email system; Level 3">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/AgenticAI_3.jpg" alt="Infographic builds across a series of images This is the third image (of 3) and adds Level 4 for the final piece of the graphic. Level 4" width="Multi-Agent Systems A system of specialized agents collaborate in real-time to manage complex" height="crossdomain processes Use Cases Specialized agents collaborate to process orders update inventory">
+</div>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_interactive_accordion"><a class="anchor" href="#_interactive_accordion"></a>Interactive Accordion</h3>
+<div class="paragraph">
+<p><strong>Agentic AI is adaptive and dynamic.</strong>
+Agentic AI learns from previous patterns and data. This means that it can change its strategy based on new or changing information it receives in real time. While traditional workflows only move forward, agentic workflows can move forward and backward, with the ability to backtrack and mend errors as it goes In other words agentic AI can proactively anticipate needs and reflect on its own work.For example, an autonomous vehicle may use agentic AI to improve its ability to sense the difference between a piece of trash on the road and a squirrel. As it continuously monitors and analyzes its own behavior, it can improve the outcome of its actions</p>
+</div>
+<div class="paragraph">
+<p><strong>Agentic AI can independently manage and complete tasks</strong>
+Agentic AI is sometimes referred to as autonomous AI. This is because it has the capability to communicate and collaborate with other AI systems and digital infrastructures on behalf of a human user, or another AI agent.For example, you can tell an AI agent that you want to make spaghetti for dinner. The AI agent could then complete the steps necessary to find a recipe, make a list of ingredients and place an order for those ingredients to be delivered to your home from a local grocery store.</p>
+</div>
+<div class="paragraph">
+<p><strong>Agentic AI has a 'chaining' ability.</strong>
+The AI system can perform a sequence of actions in response to a single request. For example, if you ask an AI agent to 'create a website,' it can perform all the steps needed to carry out that task. This means that from one prompt, the AI agent can carry out the tasks of writing the code for the structure, populating the pages with content, designing the visuals and testing for responsiveness</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/By2029AgenticAI.jpg" alt="sBy 2029, agentic AI will autonomously resolve 80% of common customer service issues without human intervention, leading to a 30 reduction in operational costs" width="s">
+</div>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_what_is_an_agentic_workflow"><a class="anchor" href="#_what_is_an_agentic_workflow"></a>What is an agentic workflow?</h3>
+<div class="paragraph">
+<p>Agentic AI brings us closer to creating intelligent systems that can operate independently, collaborate effectively, and learn from their interactions with data. Agentic AI works because of a process known as an agentic workflow.</p>
+</div>
+<div class="paragraph">
+<p>An agentic workflow is a structured series of actions managed and completed by AI agents</p>
+</div>
+<div class="paragraph">
+<p>When an AI agent is given a goal to complete, it begins the workflow by breaking down a task into smaller individual steps then performing those stepsTo carry out this series of steps an AI agent spins up more versions of itself, creating a multi-agent system (MAS). In this workflow, the main agent (also known as a meta agent, orchestrator, or supervisor) delegates tasks to other agents assigning values and interacting with memory in a feedback loop. Together, the committee of agents work in parallel until the overall goal is complete.Within this MAS, each agent is made up of an internal structure that allows it to function both independently and collaboratively within its system. This collaboration is dependent on shared memory stores which provide context regarding individual knowledge, past experiences and belief states</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_benefits_of_agentic_ai"><a class="anchor" href="#_benefits_of_agentic_ai"></a>Benefits of agentic AI</h3>
+<div class="paragraph">
+<p>Agentic AI is most useful for tasks that require continuous monitoring or rapid decision making. The benefits of agentic AI include:</p>
+</div>
+<div class="paragraph">
+<p>Click each of the following flash cards to read more about each benefit of agentic AI.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_flashcards_interactive_flashcards"><a class="anchor" href="#_flashcards_interactive_flashcards"></a>🃏 Flashcards: Interactive Flashcards</h3>
+<div class="paragraph">
+<p><strong>Flashcard Set (3 cards):</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Card 1:</strong>
+<strong>Front:</strong> More productivity</p>
+</div>
+<div class="paragraph">
+<p><strong>Back:</strong> Delegating tasks to an AI agent allows for more focus to be placed on initiatives that add value to an organization. Think of it as an intern that works 24 hours a day, 7 days a week.</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Card 2:</strong>
+<strong>Front:</strong> Reduced cost</p>
+</div>
+<div class="paragraph">
+<p><strong>Back:</strong> Agentic AI reduces human error, taking away the cost associated with inefficiencies oversights and mistakes</p>
+</div>
+<hr>
+<div class="paragraph">
+<p><strong>Card 3:</strong>
+<strong>Front:</strong> Informed decision making</p>
+</div>
+<div class="paragraph">
+<p><strong>Back:</strong> Agentic AI uses ML to filter and process massive amounts of real-time data. Insights from larger pools of good data result in better predictions and strategies</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_agentic_ai_use_cases"><a class="anchor" href="#_agentic_ai_use_cases"></a>Agentic AI use cases</h3>
+<div class="paragraph">
+<p>Agentic AI can be used for many purposes Let&#8217;s take a look at how agentic AI may be used in an industry setting:Business operations could use an AI agent to manage supply chains optimize inventory levels forecast demands and plan logisticsHealthcare fields could use an AI agent to engage with clients monitor needs carry out treatment plans and provide personalized support.Software development could grow more efficient from using agentic AI to automatically generate debugging code, manage development lifecycle, and design system architecture.Software operations could use agentic AI for the autonomous operations of networks and other IT infrastructure or servicesCybersecurity could benefit from an AI agent helping to monitor network traffic, detect issues and respond to threats in real time.Researchers could use agentic AI to design and run experiments analyze data, formulate new hypotheses and generally speed up the pace of innovation by operating faster than a single human (or group of researchers ever could.Finance and trade could be enhanced by agentic AI&#8217;s ability to constantly analyze market trends make trading decisions and adjust strategy based on streams of real-time data it has access to.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_agentic_ai_vs_generative_ai"><a class="anchor" href="#_agentic_ai_vs_generative_ai"></a>Agentic AI vs generative AI</h3>
+<div class="paragraph">
+<p>Both agentic AI and generative AI offer productivity benefits by assisting, augmenting, and optimizing tasks and processes Both are forms of AI that use LLMsWhen comparing the two, think of agentic AI as proactive and generative AI as reactive.Agentic AI is a system that can proactively set and complete goals with minimal human oversight. If part of accomplishing that goal involves creating content, generative AI tools handle that task. Agentic AI becomes an agent of the user and/or system.Generative AI is a tool that creates new content in reaction to a prompt. It can be a component of an agentic system, but it doesn&#8217;t act on its own to complete a task. It has no agency.Agentic AI and generative AI do work collaboratively. Agentic AI systems may use generative AI to converse with a user, independently create content as part of a greater goal, or communicate with external tools generative AI is a critical part of agentic AI&#8217;s 'cognitive' process Both types of AI are adaptable in their own way. Generative AI expresses its adaptability by producing content in many styles and for different contexts Agentic AI showcases its adaptability by adjusting its plan and strategy in response to changing environmental conditions or new information.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_let_consider_a_hypothetical_use_case"><a class="anchor" href="#_let_consider_a_hypothetical_use_case"></a>Let' consider a hypothetical use case.</h3>
+<div class="paragraph">
+<p>Imagine a sales representative wants to use AI to write a follow-up email to a sales lead.With generative AI, the sales representative opens a generative AI interface and enters a prompt like, 'Write a polite and professional follow-up email to Maria Wang about our proposal.' The generative AI produces a draft of the email and has fulfilled its purpose. It&#8217;s now up to the sales representative to copy that text, paste it into an email, enter the recipient&#8217;s email address and hit send.Now let&#8217;s explore how agentic AI would handle a similar task.Within an agentic system, the sales representative sets a rule or command in their customer relationship management (CRM) system. It might read something like, 'For any sales lead I mark as 'Follow-up required,' wait two business days then send a follow-up email.'Once the sales representative marks Maria Wang as 'Follow-up required,' the agentic workflow is triggered. The system has its instructions (the initial prompt) and independently lays out a plan to enact with the help of external tools The plan may look something like this</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_interactive_process"><a class="anchor" href="#_interactive_process"></a>📋 Interactive Process</h3>
+<div class="paragraph">
+<p><strong>Introduction:</strong> The agentic workflow
+Once the sales representative marks Maria Wang as 'Follow-up required,' the agentic workflow is triggered. The system has its instructions (the initial prompt) and independently lays out a plan to enact with the help of external tools The plan may look something like this</p>
+</div>
+<div class="paragraph">
+<p><strong>Summary:</strong> The end
+Continue to the next topic.</p>
+</div>
+<div class="paragraph">
+<p><strong>Step 3:</strong> Process Step
+After two business days the system sends a request to the agentic workflow.</p>
+</div>
+<div class="paragraph">
+<p><strong>Step 4:</strong> Process Step
+The system retrieves Maria&#8217;s details from the CRM.</p>
+</div>
+<div class="paragraph">
+<p><strong>Step 5:</strong> Process Step
+Another tool fetches additional information about Maria (customer history, personalization details company information, etc.) that provides context for the prompt for the follow-up email.</p>
+</div>
+<div class="paragraph">
+<p><strong>Step 6:</strong> Process Step
+The system creates a prompt for the follow-up email and provides it to an integrated gen AI model, which writes the email text.</p>
+</div>
+<div class="paragraph">
+<p><strong>Step 7:</strong> Process Step
+The system provides a draft of the follow-up email to the sales representative, who approves the email or sends it back to redraft.</p>
+</div>
+<div class="paragraph">
+<p><strong>Step 8:</strong> Process Step
+If the sales representative approves the email, the system makes an application programming interface (API) call to Maria&#8217;s email service.</p>
+</div>
+<div class="paragraph">
+<p><strong>Step 9:</strong> Process Step
+The system sends the email to Maria.</p>
+</div>
+<div class="paragraph">
+<p><strong>Step 10:</strong> Process Step
+The system updates the CRM to show the email has been sent.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_what_is_model_context_protocol_mcp"><a class="anchor" href="#_what_is_model_context_protocol_mcp"></a>What is Model Context Protocol (MCP)?</h3>
+<div class="paragraph">
+<p>Model Context Protocol (MCP) is an open source protocol, introduced by Anthropic, that enables two-way connection and standardized communication between AI applications and external services</p>
+</div>
+<div class="paragraph">
+<p>An open source protocol, or set of instructions is like a recipe for code that&#8217;s freely available to use and contribute to.</p>
+</div>
+<div class="paragraph">
+<p>MCP defines how models can call external tools retrieve data, and interact with services to enhance their capabilities It provides a simplified and reliable way for AI systems to virtually 'plug in' to different data sources and tools Think of MCP as a USB-C cable that connects devices to accessories and allows for transmission of data.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_how_does_mcp_communication_work"><a class="anchor" href="#_how_does_mcp_communication_work"></a>How does MCP communication work?</h3>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ModelContextProtocol.jpg" alt="Title Model Context Protocol (MCP) Subtitle The plug-and-play gateway to AI tools Left side of graphic consists of a diagram. A box labelled 'sMCP client&#8217;s is on the far left. There are four arrows going from 'sMCP client&#8217;s to 'sMCP serverss then there are four arrows running from each 'sMCP server&#8217;s to 'sToolsdata&#8217;s On the right side of the graphic is the following text: Open protocol that enables LLMs to use external tools and data" width="simplifying integration and expanding capabilities Simplified tooling: Allows AI systems to 'splug and play's with different tools without custom integrations Decoupled architecture: Separates the AI model from the specific tools it uses making the system more modular and easier to maintain Enhanced portability: Agents can run in any host environment that supports MCP and connect to any compliant server">
+</div>
+</div>
+<div class="paragraph">
+<p>MCP is based on the client-host-server model, also known as the client-server model, which includesMCP client: The AI application or system that requests access to external data or resourcesMCP host: The infrastructure (virtual machine, container, or serverless function) that manages communication between the client and server.MCP server: The component that provides specific tools resources and capabilities to the client.MCP begins with a handshake protocol. This initial greetingalso known as a capability discoveryconfirms that the MCP client and the MCP server can talk to each other.During the handshake protocol, the MCP client and the MCP server swap critical information to ensure they&#8217;re compatible. The client shares which capabilities it has and which version of MCP it understands In return, the server shares which capabilities it supports and which tools and resources it can provide to the client.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mcp_and_agentic_ai"><a class="anchor" href="#_mcp_and_agentic_ai"></a>MCP and agentic AI</h3>
+<div class="paragraph">
+<p>MCP and agentic AI enable each other to create intelligent AI systems With MCP, AI systems can interact with the broader digital ecosystem to accomplish tasks for users Without MCP, agentic AI can think and plan (all the traits of generative AI), but can&#8217;t interact with any outside systems</p>
+</div>
+<div class="paragraph">
+<p>Although rapid adoption of MCP by major industry players may make it seem as though it will become the standard for AI tool integration, it is not the only option. Examples of other protocols include LangChain Agent Protocol and Google' Agent2Agent (A2A).</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_takeaways"><a class="anchor" href="#_takeaways"></a>Takeaways</h3>
+<div class="paragraph">
+<p>Here are the takeaways from this lesson:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Agentic AI is an AI system designed to interact with data and tools in a way that requires minimal human intervention; agentic AI can accomplish tasks by creating a list of steps and performing them autonomously.</p>
+</li>
+<li>
+<p>AI agent as an entity that sits on top of other software tools and operates them.</p>
+</li>
+<li>
+<p>An agentic workflow is a structured series of actions managed and completed by AI agents</p>
+</li>
+<li>
+<p>Think of agentic AI as proactive and generative AI as reactive.</p>
+</li>
+<li>
+<p>Model Context Protocol (MCP) is an open source protocol, introduced by Anthropic, that enables two-way connection and standardized communication between AI applications and external services</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_knowledge_check"><a class="anchor" href="#_knowledge_check"></a>Knowledge check</h3>
+<div class="listingblock knowledge-check">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;div class="knowledge-check" data-question="True or false: An agentic workflow is a structured series of actions managed and completed by AI agents" data-correct="A" data-correct-feedback="True. Generative AI involves the use of deep learning models"'''
+
+=== 🧠 Knowledge Check: Which of the following statements most accurately describes a characteristic of agentic AI?
+
+*Answer Options:*
+A. It can only follow simple, predefined rules
+B. It exhibits autonomy, goal-driven behavior, and adaptability. ✅
+C. It can predict the most likely of several potential outcomes but cannot generate new content.
+D. It requires a minimum of four AI agents working in concert.
+
+*✅ Correct Feedback:* Correct! Agentic AI exhibits autonomy, goal-driven behavior, and adaptability." data-incorrect-feedback="Incorrect. Please try again.""&gt;
+  &lt;div class="knowledge-check-question"&gt;
+    &lt;strong&gt;True or false: An agentic workflow is a structured series of actions managed and completed by AI agents&lt;/strong&gt;
+  &lt;/div&gt;
+  &lt;div class="knowledge-check-options"&gt;
+        &lt;label class="knowledge-check-option"&gt;&lt;input type="radio" name="kc-4972" value="A" /&gt; &lt;span&gt;True&lt;/span&gt;&lt;/label&gt;
+        &lt;label class="knowledge-check-option"&gt;&lt;input type="radio" name="kc-4972" value="B" /&gt; &lt;span&gt;False&lt;/span&gt;&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;button class="knowledge-check-submit"&gt;Check Answer&lt;/button&gt;
+  &lt;div class="knowledge-check-feedback" style="display: none;"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="inferencing-optimization.html">Inferencing and Optimization</a></span>
+  <span class="next"><a href="ai-security-responsibility.html">AI Security and Using AI Responsibly</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

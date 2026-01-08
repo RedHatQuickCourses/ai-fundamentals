@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Inferencing and Optimization :: AI Fundamentals</title>
+    <link rel="prev" href="predictive-generative-ai.html">
+    <link rel="next" href="agentic-ai.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../..">AI Fundamentals</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ai-fundamentals" data-version="1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">AI Fundamentals</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="introduction.html">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="predictive-generative-ai.html">Predictive AI and Generative AI</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="inferencing-optimization.html">Inferencing and Optimization</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="agentic-ai.html">Agentic AI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ai-security-responsibility.html">AI Security and Using AI Responsibly</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AI Fundamentals</span>
+    <span class="version">1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">AI Fundamentals</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">AI Fundamentals</a></li>
+    <li><a href="inferencing-optimization.html">Inferencing and Optimization</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Inferencing and Optimization</h1>
+<div class="sect2">
+<h3 id="_lesson_overview"><a class="anchor" href="#_lesson_overview"></a>Lesson overview</h3>
+<div class="paragraph">
+<p>This lesson offers a high-level look at inferencing and its importance to artificial intelligence (AI). It also covers AI optimization, including a brief view of some of the more common optimization techniques</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_lesson_objectives"><a class="anchor" href="#_lesson_objectives"></a>Lesson objectives</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Define inferencing in the context of AI.</p>
+</li>
+<li>
+<p>Describe the importance of inference servers to AI.</p>
+</li>
+<li>
+<p>Explain, at a high level, the trade-offs involved in inferencing.</p>
+</li>
+<li>
+<p>Describe the concept of distributed inference.</p>
+</li>
+<li>
+<p>Explain the importance of AI optimization.</p>
+</li>
+<li>
+<p>Describe, in broad terms AI optimization strategies</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_what_is_inferencing"><a class="anchor" href="#_what_is_inferencing"></a>What is inferencing?</h3>
+<div class="paragraph">
+<p>Inferencing, in the context of AI, is the process of running an AI model to generate responses an AI model provides an answer based on data. What some people generally call 'AI' is really the success of AI inference: the final stepthe 'aha' momentin a long and complex process of ML technology. AI inference is where the business value happens and the end result is delivered.Training AI models with sufficient data can help improve AI inference accuracy and speed.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/WhatIsInferencing.png" alt="Image title 'sWhat is inferencing?'s On the left side of image there is an illustration of a person sitting in front of laptop" width="labelled 'sUser using AI app's on the right side" height="there is an image of a robot' face labelled">
+</div>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_what_is_an_inference_server"><a class="anchor" href="#_what_is_an_inference_server"></a>What is an inference server?</h3>
+<div class="paragraph">
+<p>An inference server is the crucial piece of software infrastructure that hosts a trained ML model, making the AI ready for real-time use by end-users or other applications The server receives an input request (a prompt, a query, or data), feeds it through the trained model, and generates a real-time output or conclusion based on the model' learned patternsthis applies equally to predictive AI (like scoring a recommendation) and generative AI (like creating text or images. While inference servers are necessary for any ML model serving, the current industry focus is heavily centered around the high-demand requirements for LLM serving, which require significant memory and computing resources to perform inference at scale.To infer is to conclude based on evidence. For example, you may see your friend&#8217;s living room light on, but you don&#8217;t see them. You may infer that your friend is home, but you don&#8217;t have absolute evidence to prove it.An LLM also doesn&#8217;t have absolute evidence about the meaning of a word or phrase (it&#8217;s a piece of software), so it uses its training as evidence. In a series of calculations based on data, it generates a conclusion. Just like when you calculate that if the light is off, it means your friend is out.To perform effectively, LLMs need extensive storage, memory, and infrastructure to inference at scale.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_what_are_the_trade_offs_regarding_inferencing"><a class="anchor" href="#_what_are_the_trade_offs_regarding_inferencing"></a>What are the trade-offs regarding inferencing?</h3>
+<div class="paragraph">
+<p>When moving from a proof-of-concept to production, the demands of AI solutions change significantly. It' not just about a clever model anymore. Organizations need to pay attention to user expectations the budget, and the level of responsiveness an IT system should have. Optimizing for one thing often impacts another; optimal inference requires identifying the trade-offsUsers expect a lot of their interaction with models that interaction needs to be fast and provide accurate responsesModel inference can be expensive if processing times and length of model responses aren&#8217;t measured and controlled.All areas of the organization expect business operations won&#8217;t be affected by low throughput and high latency.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ReqsOfEnterpriseAIProductionSystems1.jpg" alt="Image title Requirements of enterprise AI production systems Image subtitle Identifying the trade-offs of inference" width="Three items of text" height="First item Need to be fast and accurate in their responses Second item Manage processing times and token output to control const">
+</div>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_scaling_llm_inference"><a class="anchor" href="#_scaling_llm_inference"></a>Scaling LLM inference</h3>
+<div class="paragraph">
+<p>Operationalizing AI models at scale is a critical challenge for IT leaders Effectively serving LLMs at scale requires a strategic, full-stack approach that addresses both the model itself and the serving runtime. A single approach is not enough. Achieving high performance and cost efficiency requires a dual focusmanaging resource consumption and maximizing throughput.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_what_is_vllm"><a class="anchor" href="#_what_is_vllm"></a>What is vLLM?</h3>
+<div class="paragraph">
+<p>image::vLLM_Logo.png[One approach to achieving inference at scale involves using vLLM.
+<strong>Alt Text:</strong> VLLM logo]</p>
+</div>
+<div class="paragraph">
+<p>An open source library and serving engine, vLLM (<a href="https://github.com/vllm-project/vllm" class="bare">https://github.com/vllm-project/vllm</a>) is designed to significantly accelerate the inference (generation of outputs of LLMs It was originally developed at UC Berkeley and has become a popular solution for deploying LLMs efficiently and cost-effectively in production environments to the extent that many in the AI community consider it the de facto standard for model inferencing.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ValueOfVLLM.png" alt="Title The value of vLLM Subtitle Deliver fast" width="flexible" height="and scalable inference. Main point 1 Faster response time: vLLM can achieve higher throughput. This translates to processing more tasks or requests within a given amount of time. Main point 2 Reduced hardware costs vLLM offers a more efficient use of resources which is equivalent to fewer GPUs needed to handle the processing of LLMs Main point 3 Efficient memory management: vLLM organizes virtual memory. This translates to handling larger models and longer sequences more effectively within a given hardware setup. Main point 4 Designed for security and scale: Self-hosting an LLM with vLLM provides more control over data privacy and usage">
+</div>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_what_is_distributed_inference"><a class="anchor" href="#_what_is_distributed_inference"></a>What is distributed inference?</h3>
+<div class="paragraph">
+<p>Distributed inference lets AI models process workloads more efficiently by dividing the labor of inference across a group of interconnected devices Think of it as the software equivalent of the saying, 'many hands make light work.' Distributed inference supports a system that splits requests across a fleet of hardware, which can include physical and cloud servers From there, each inference server processes its assigned portion in parallel to create an output. The result is a resilient and observable system for delivering consistent and scalable AI-powered services</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_how_does_distributed_inference_work"><a class="anchor" href="#_how_does_distributed_inference_work"></a>How does distributed inference work?</h3>
+<div class="paragraph">
+<p>Distributed inference works by giving AI models a single, intelligent coordinator that acts as the brain for AI workloads When a new request comes in, distributed inference helps analyze the request and route it to the best part of the hardware system for the job.Large models too many users or latency issues can all hinder performance. Depending on the issue causing the bottleneck, distributed inference uses several strategiesDividing the model: If the model is too large for one GPU, distributed inference uses model parallelism to divide the model across multiple GPUsDividing the data: To handle many users at once, it uses data parallelism and intelligent load balancing to divide the input data across servers This efficiently manages concurrent requestsDividing the inference process To optimize the entire workflow, it uses process disaggregation. This separates the two computational phases that create an inference response (prefill and decode) and runs them in separate environments</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_what_is_optimization_in_the_context_of_ai"><a class="anchor" href="#_what_is_optimization_in_the_context_of_ai"></a>What is optimization in the context of AI?</h3>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ImageOptimization.jpg" alt="We hear a lot about groundbreaking AI innovations incredible new models and the amazing things that they can do. But there' a quieter" width="often overlooked challenge that' crucial for actually making AI work in the real world" height="and that' optimization. So what exactly is optimization in the context of AI? It' not just about saving money.">
+</div>
+</div>
+<div class="paragraph">
+<p>Optimization is about unlocking performance, reliability, and reach. An optimized model delivers faster predictions uses less memory, and can run on more diverse hardware. It extends the life of existing infrastructure and allows AI to serve more users with fewer resources</p>
+</div>
+<div class="paragraph">
+<p>Think of it this way: Innovation is like designing a sleek, powerful sports car. It' exciting. It' groundbreaking. But optimization, that' making sure that your car can actually drive on everyday roads reliably and affordably without guzzling all your fuel. Remember: If AI can&#8217;st scale, it can&#8217;st succeed.Training an AI model gets all the headlines It' where the model learns But inference is the day-to-day act of putting that trained model to work, making predictions powering applications in real time. And this is where cost, latency, and user experience really collide.Too often, AI systems are built with massive oversized models chosen purely for their benchmark performance. It' like using a sledgehammer to tighten a loose screw. The result, excessive GPU usage, frustrating latency, and infrastructure costs that quietly add up. And with the rise of huge foundation models like Llama, Mistral, and DeepSeek, the computational cost of inference has gone through the roof. Optimization isn&#8217;st just an option anymore; it&#8217;s essential to make these models usable at scale.</p>
+</div>
+<div class="paragraph">
+<p>Optimization makes AI powerful and practical.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_what_are_some_key_optimization_techniques"><a class="anchor" href="#_what_are_some_key_optimization_techniques"></a>What are some key optimization techniques</h3>
+<div class="paragraph">
+<p>Let' take a look at some key optimization techniques</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_interactive_accordion"><a class="anchor" href="#_interactive_accordion"></a>Interactive Accordion</h3>
+<div class="paragraph">
+<p><strong>Quantization</strong>
+This reduces the numerical precision of the model, making it smaller and faster. For example, Red Hat' evaluations on Llama models showed a 3.5 times size reduction and a 2.4 time speed up with almost no loss in accuracy.</p>
+</div>
+<div class="paragraph">
+<p><strong>Batching</strong>
+This groups multiple inference requests together, improving throughput without changing the model itself.</p>
+</div>
+<div class="paragraph">
+<p><strong>Caching</strong>
+This eliminates redundant computations especially useful for repeated or similar queries</p>
+</div>
+<div class="paragraph">
+<p><strong>Pruning and distillation</strong>
+These techniques reduce model complexity by removing unnecessary parts or training smaller models to mimic the performance of larger ones</p>
+</div>
+<div class="paragraph">
+<p>Every optimization involves trade-offs In critical applications such as those related to healthcare or finance, even a tiny shift in accuracy can have major consequences Optimization techniques should be carefully evaluated to properly balance precision with performance goals</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_takeaways"><a class="anchor" href="#_takeaways"></a>Takeaways</h3>
+<div class="paragraph">
+<p>Here are the takeaways from this lesson:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Inferencing, in the context of AI, is the process of running an AI model to generate responses an AI model provides an answer based on data.</p>
+</li>
+<li>
+<p>An inference server is the piece of software that allows AI applications to communicate with LLMs and generate a response based on data. Inference servers feed the input requests through an ML model and return an output.</p>
+</li>
+<li>
+<p>Distributed inference lets AI models process workloads more efficiently by dividing the labor of inference across a group of interconnected devices</p>
+</li>
+<li>
+<p>In the context of AI, optimization is about unlocking performance, reliability, and reach.</p>
+</li>
+<li>
+<p>Key AI optimization techniques include quantization, batching, caching, and pruning and distillation.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_knowledge_check"><a class="anchor" href="#_knowledge_check"></a>Knowledge check</h3>
+<div class="listingblock knowledge-check">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;div class="knowledge-check" data-question="Which of the following statements most accurately describes an inference server?" data-correct="B" data-correct-feedback="Correct! An inference server is a piece of software that allows AI applications to communicate with large language models (LLMs and generate a response based on data." data-incorrect-feedback="Incorrect. Please try again.""&gt;
+  &lt;div class="knowledge-check-question"&gt;
+    &lt;strong&gt;Which of the following statements most accurately describes an inference server?&lt;/strong&gt;
+  &lt;/div&gt;
+  &lt;div class="knowledge-check-options"&gt;
+        &lt;label class="knowledge-check-option"&gt;&lt;input type="radio" name="kc-6434" value="A" /&gt; &lt;span&gt;It is a specialized type of large language model (LLM) exclusively used with agentic AI workflows&lt;/span&gt;&lt;/label&gt;
+        &lt;label class="knowledge-check-option"&gt;&lt;input type="radio" name="kc-6434" value="B" /&gt; &lt;span&gt;It is a piece of software that allows AI applications to communicate with large language models (LLMs and generate a response based on data.&lt;/span&gt;&lt;/label&gt;
+        &lt;label class="knowledge-check-option"&gt;&lt;input type="radio" name="kc-6434" value="C" /&gt; &lt;span&gt;It is the safest place to store model training data to ensure data sovereignty.&lt;/span&gt;&lt;/label&gt;
+        &lt;label class="knowledge-check-option"&gt;&lt;input type="radio" name="kc-6434" value="D" /&gt; &lt;span&gt;It is a dedicated security appliance that performs threat deduction.&lt;/span&gt;&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;button class="knowledge-check-submit"&gt;Check Answer&lt;/button&gt;
+  &lt;div class="knowledge-check-feedback" style="display: none;"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock knowledge-check">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;div class="knowledge-check" data-question="Which of the following is an AI optimization technique?" data-correct="C" data-correct-feedback="Correct! Quantization is an AI optimization technique. Other examples of AI optimization techniques include batching, caching, and pruning and distillation." data-incorrect-feedback="Incorrect. Please try again.""&gt;
+  &lt;div class="knowledge-check-question"&gt;
+    &lt;strong&gt;Which of the following is an AI optimization technique?&lt;/strong&gt;
+  &lt;/div&gt;
+  &lt;div class="knowledge-check-options"&gt;
+        &lt;label class="knowledge-check-option"&gt;&lt;input type="radio" name="kc-8279" value="A" /&gt; &lt;span&gt;Containerization&lt;/span&gt;&lt;/label&gt;
+        &lt;label class="knowledge-check-option"&gt;&lt;input type="radio" name="kc-8279" value="B" /&gt; &lt;span&gt;Monte Carlo&lt;/span&gt;&lt;/label&gt;
+        &lt;label class="knowledge-check-option"&gt;&lt;input type="radio" name="kc-8279" value="C" /&gt; &lt;span&gt;Quantization&lt;/span&gt;&lt;/label&gt;
+        &lt;label class="knowledge-check-option"&gt;&lt;input type="radio" name="kc-8279" value="D" /&gt; &lt;span&gt;Conversion rate optimization (CRO)&lt;/span&gt;&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;button class="knowledge-check-submit"&gt;Check Answer&lt;/button&gt;
+  &lt;div class="knowledge-check-feedback" style="display: none;"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="predictive-generative-ai.html">Predictive AI and Generative AI</a></span>
+  <span class="next"><a href="agentic-ai.html">Agentic AI</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

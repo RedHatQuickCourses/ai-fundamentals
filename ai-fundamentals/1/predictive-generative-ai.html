@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Predictive AI and Generative AI :: AI Fundamentals</title>
+    <link rel="prev" href="introduction.html">
+    <link rel="next" href="inferencing-optimization.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../..">AI Fundamentals</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ai-fundamentals" data-version="1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">AI Fundamentals</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="introduction.html">Introduction</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="predictive-generative-ai.html">Predictive AI and Generative AI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="inferencing-optimization.html">Inferencing and Optimization</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="agentic-ai.html">Agentic AI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ai-security-responsibility.html">AI Security and Using AI Responsibly</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AI Fundamentals</span>
+    <span class="version">1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">AI Fundamentals</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">AI Fundamentals</a></li>
+    <li><a href="predictive-generative-ai.html">Predictive AI and Generative AI</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Predictive AI and Generative AI</h1>
+<div class="sect2">
+<h3 id="_lesson_overview"><a class="anchor" href="#_lesson_overview"></a>Lesson overview</h3>
+<div class="paragraph">
+<p>Even if you&#8217;ve never sought out AI, it&#8217;s likely that you interact with it in your everyday life. This lesson introduces predictive AI and generative AI and explores everyday examples of how individuals and enterprises use both of these types of AI.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_lesson_objectives"><a class="anchor" href="#_lesson_objectives"></a>Lesson objectives</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Define predictive AI and generative AI.</p>
+</li>
+<li>
+<p>Describe everyday examples of predictive AI and generative AI.</p>
+</li>
+<li>
+<p>Explain, at a high level, how organizations might use both types of AI.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_what_is_predictive_ai"><a class="anchor" href="#_what_is_predictive_ai"></a>What is predictive AI?</h3>
+<div class="paragraph">
+<p>image::PredictiveAI_2025.png[Predictive AI is one of the most common types of AI used in business applications It has been in use for many years and predicts or forecasts outcomes based on historical data.
+<strong>Alt Text:</strong> Predictive AI predicts or forecasts outcomes based on historical data. Predict credit risk or fraud Forecast demand Offer product recommendations More accurately determine patient risk scoring Predict high-risk illnesses]</p>
+</div>
+<div class="paragraph">
+<p>Predictive AI that relies on advanced statistical processing methods and uses a different kind of mathematics than neural networks Statistical processing doesn&#8217;t get the same kind of performance boost from GPUs that neural networks do. Neural networks can also be used to find complex patterns needed to make these predictionsA relatively mature technology, predictive AI is widely used in a variety of sectors For example, predictive AI is often used to forecast credit risk or fraud in the financial services industry and to identify which patients are at the most risk for certain illnesses in the medical sector.Let&#8217;s look at some everyday examples of predictive AI.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_predictive_ai_in_your_daily_life"><a class="anchor" href="#_predictive_ai_in_your_daily_life"></a>Predictive AI in your daily life</h3>
+<div class="paragraph">
+<p>Whether you realize it or not, you likely interact with predictive AI daily.</p>
+</div>
+<div class="paragraph">
+<p>To learn more about everyday examples of predictive AI, click either the right-facing arrow or the red Start button below.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_interactive_process"><a class="anchor" href="#_interactive_process"></a>📋 Interactive Process</h3>
+<div class="paragraph">
+<p><strong>Introduction:</strong> Everyday examples of predictive AI
+Let' take a quick look at some everyday examples of predictive AI.</p>
+</div>
+<div class="paragraph">
+<p><strong>Summary:</strong> Continue to the next topic.
+Click the Continue bar below to progress to the next topic.</p>
+</div>
+<div class="paragraph">
+<p><strong>Step 3:</strong> Text autocompletion: Google
+Every time you use Google to conduct a web search, you interact with AI. When you enter text into Google&#8217;s search box, Google uses AI to offer you autocompletion options for your search as you type. Google&#8217;s AI bases its predictive search completion on the history of previous searches by other users among other data.</p>
+</div>
+<div class="paragraph">
+<p><strong>Step 4:</strong> Text autocompletion: Text messaging
+Similar to Google searches the autocomplete functionality available with most SMS messaging programs uses AI to predict which word the user is likely to enter next.</p>
+</div>
+<div class="paragraph">
+<p><strong>Step 5:</strong> Text autocompletion: Text messaging (cont)
+Notice how the iPhone user is offered three options for words that seem likely to follow 'Can&#8217;t' in this context. The messaging application on the iPhone is using AI to predict which word the user is likely to enter next.</p>
+</div>
+<div class="paragraph">
+<p><strong>Step 6:</strong> Online retailer recommendations
+When retail websites such as Amazon offer you recommendations of items to purchase, that&#8217;s another example of predictive AI at work.Amazon makes recommendations based on customersss interests and what they have purchased before, and how they have rated their previous purchases In addition, Amazon&#8217;s AI has access to data regarding other customersss purchases and uses that to provide targeted recommendations For example, suppose you are purchasing an iPad on Amazon, and place the iPad in your cart. Amazon then indicates that other customers who purchased iPads also purchased a certain screen protector and a particular type of case. Based on this recommendation, you add the screen protector and case to your cart.</p>
+</div>
+<div class="paragraph">
+<p><strong>Step 7:</strong> Movie and music recommendations
+Streaming applications such as Netflix and Spotify use predictive AI to make viewing or listening recommendations Suppose you just watched the 1979 film Alien on Netflix, and the application now suggests you watch Mad Max: Fury Road. How does Netflix arrive at this recommendation? Put very simply, data regarding the film you watched (as well as data regarding your viewing preferences and those of other Netflix users including other users who watched Alien) is fed into a model that data scientists have created or trained.</p>
+</div>
+<div class="paragraph">
+<p><strong>Step 8:</strong> “Data scientists”? What’s “data science”?
+Data science is an interdisciplinary field that leverages mathematical, statistical, and computational techniques to extract knowledge and insights from structured and unstructured data. It encompasses various processes from data collection and cleaning to analysis and visualization, ultimately driving decision making in a wide range of domains Data scientists extract knowledge and insight from data and help organizations ask the right questions about what they need AI models to do. Examples of activities data scientists engage in include:Data collection from various sources including databases APIs files and streaming platformsData cleaning to remove errors handle missing values and format the data for analysis Selection of the appropriate AI models or algorithms and training these models using data and evaluate their performance using a variety of metricsEvaluation and validation of the models to confirm that they perform as expectedData scientists use various tools to accomplish their tasks including such things as Jupyter Notebooks PyTorch, and TensorFlow.Data scientists are among the people most likely to be working with Red Hat&#8217;s AI solutions They tend to not be interested in underlying infrastructure concerns in the same way that IT operations personnel are.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_enterprises_also_use_predictive_ai"><a class="anchor" href="#_enterprises_also_use_predictive_ai"></a>Enterprises also use predictive AI.</h3>
+<div class="paragraph">
+<p>Just as predictive AI is part of the everyday life of individual users it plays a similar role for enterprises Let&#8217;s explore some examples of how enterprises use predictive AI in their business</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_logistics_companies"><a class="anchor" href="#_logistics_companies"></a>Logistics companies</h3>
+<div class="imageblock">
+<div class="content">
+<img src="_images/UPSTruck.jpg" alt="Logistics companies use predictive AI every day to conduct their business and deliver for their customers">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_optimizing_route_planning"><a class="anchor" href="#_optimizing_route_planning"></a>Optimizing route planning</h3>
+<div class="paragraph">
+<p>Logistics companies such as UPS use predictive AI to optimize route planning, based on data from previous deliveries and forecast the ideal route for delivery trucksDelivery route planning must account for such factors as traffic, fuel consumption, weather conditions and safety considerations This planning can quickly become complex when drivers need to make more than 100 stops each day; however, determining the optimal route can reduce costs increase efficiency, and enhance customer satisfaction.According to its website, UPS delivers 22.3 million packages and documents daily; however, it only has approximately 135,000 trucks and other road vehicles in its fleet. How does UPS deliver so many packages with so few trucks Predictive AI is part of what makes this level of efficiency possible.</p>
+</div>
+<div class="paragraph">
+<p>By applying predictive AI to package delivery, and accounting for 'predicted' packages along with known packages UPS annually saves an estimated 18.5 million miles 35 million, 800,000 gallons of fuel, and 18,500 metric tons of emissions</p>
+</div>
+<div class="paragraph">
+<p>Source: Harvard Business Review (<a href="https://hbr.org/2024/01/getting-machine-learning-projectsfrom-idea-to-execution" class="bare">https://hbr.org/2024/01/getting-machine-learning-projectsfrom-idea-to-execution</a>)</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_reducing_package_theft"><a class="anchor" href="#_reducing_package_theft"></a>Reducing package theft</h3>
+<div class="imageblock">
+<div class="content">
+<img src="_images/stock-image.jpg" alt="UPS uses predictive AI to combat package theft.Package theft has increasingly become a problem. According to Capital One Shopping (https://capitaloneshopping.com/research/package-theft-statistics::textNationwide20Package20Theft20StatisticstextOver20352520of20Americans20had" width="totaled20241.0920billion20in202023.)" height="there were 119 million packages stolen in the U.S. throughout 2023">
+</div>
+</div>
+<div class="paragraph">
+<p>With predictive AI, UPS is able to predict the likelihood of a successful delivery based on such factors as location, loss frequency, returns volume, and number of delivery attempts The AI groups these factors and can assign a score to a delivery address that reflects the likelihood of successful delivery.</p>
+</div>
+<div class="paragraph">
+<p>UPS was able to determine that 2% of 'low-confidence' addresses were involved in 30% of package losses</p>
+</div>
+<div class="paragraph">
+<p>The technology allows businesses that use UPS and their customers to reroute the most at-risk shipments to a UPS Store or UPS Access Point, giving them alternatives to ensure smooth deliveries and a great customer experience. The solution can also be built into a businesssss ordering platform to improve their delivery outcomes</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_benefits_of_using_predictive_ai_in_logistics"><a class="anchor" href="#_benefits_of_using_predictive_ai_in_logistics"></a>Benefits of using predictive AI in logistics</h3>
+<div class="paragraph">
+<p>Among the many benefits predictive AI offers logistics companies are the following:Reduced cost, time to deliver, and resource use: By using predictive AI for such things as route optimization, UPS and other logistics companies can reduce cost, deliver more quickly, and reduce fuel consumption and vehicle emissionsPrevention of package theft: By using predictive AI to identify delivery addresses where package theft is most likely to take place, logistics companies can prevent theft by allowing for package rerouting to more secure locations</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_banks_and_financial_institutions"><a class="anchor" href="#_banks_and_financial_institutions"></a>Banks and financial institutions</h3>
+<div class="imageblock unresolved">
+<div class="content">
+<img src="Bank%20vault.jpg" alt="Banks and other financial institutions routinely use predictive AI for a variety of reasons">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_identifying_fraud_and_other_financial_crimes"><a class="anchor" href="#_identifying_fraud_and_other_financial_crimes"></a>Identifying fraud and other financial crimes</h3>
+<div class="imageblock">
+<div class="content">
+<img src="_images/stock-image.jpg" alt="According to the United Nations (https://www.unodc.org/unodc/en/money-laundering/overview.html::textMoney20laundering20is20a20processthe20trail20to20foil20pursuit))" width="up to 2 trillion a year is 'laundered' by criminals attempting to obscure the illegal sources of their money. As one of the world's largest banks HSBC uses predictive AI to help it screen an average of more than 1.2 billion transactions per month for evidence of money laundering" height="fraud">
+</div>
+</div>
+<div class="paragraph">
+<p>Previously, HSBC employed a rulesbased system to review transactions for signs of money laundering, which involved setting parameters for transactions the bank&#8217;s automated monitoring system should identify. Transactions tagged as suspicious were then investigated on a case-by-case basis however, this resulted in a great deal of false positives (i.e., legal transactions that still needed to be investigated by HSBC&#8217;s human investigators.HSBC used its financial expertise to train its AI model to detect suspicious activity with more precision than its previous rulesbased system. This led to the following benefitsMore accurate risk detection: The new AI system reduced the overall number of alerts by 60 while correctly identifying two to four times as much suspicious activity as the previous system.Reduced investigation time: Fewer alerts meant investigators spent less time reviewing clean transactions As a result, HSBC was able to decrease the time it takes from first alert to detect a suspicious account.Better success in identifying criminal networks HSBC&#8217;s new system is better than the previous system at identifying networks of criminals working together to try and launder money.Improved customer satisfaction: Fewer false positives meant the bank spent less time contacting legitimate, law-abiding customers and taking up their time with, ultimately, unnecessary transaction reviews</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_providing_ai_enhanced_accounts_in_mobile_apps"><a class="anchor" href="#_providing_ai_enhanced_accounts_in_mobile_apps"></a>Providing AI-enhanced accounts in mobile apps</h3>
+<div class="imageblock">
+<div class="content">
+<img src="_images/stock-image.jpg" alt="Through its mobile banking app" width="Wells Fargo uses predictive AI to offer its customers 'predictive banking.'">
+</div>
+</div>
+<div class="paragraph">
+<p>With predictive AI, Wells Fargo analyzes customerss account information to provide tailored guidance and tips for better financial decision-making.For example, the feature flags higher-than-normal automatic monthly payments and offers reminders to prompt customers to transfer money from one account to another to avoid a possible upcoming overdraft. If a customer seems to have more money than usual in a particular month, they may be prompted to transfer money into savings</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_benefits_of_using_predictive_ai_in_banking"><a class="anchor" href="#_benefits_of_using_predictive_ai_in_banking"></a>Benefits of using predictive AI in banking</h3>
+<div class="paragraph">
+<p>Among the many benefits predictive AI offers banks are the following:More accurate fraud and money laundering detection: By using predictive AI, banks such as HSBC can identify money laundering with fewer false positives which means human investigators are able to focus on the suspicious accounts most likely to be associated with illegal activity and spend less time reviewing transactions made by legitimate, law-abiding customersTailored guidance and prompts for account holders Banks use predictive AI to help their customers identify unusually high automatic payments and prompt customers to transfer sufficient funds to avoid potential overdrafts</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_beyond_predictive_ai"><a class="anchor" href="#_beyond_predictive_ai"></a>Beyond predictive AI</h3>
+<div class="paragraph">
+<p>AI is not limited to merely forecasting likely outcomes making recommendations and so forth; it can do so much more. As AI systems become more sophisticated, they become better at simulating human intelligence, which has exciting implications that are likely to revolutionize almost every industry and convey benefits to your customers</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_what_is_generative_ai"><a class="anchor" href="#_what_is_generative_ai"></a>What is generative AI?</h3>
+<div class="paragraph">
+<p>image::GenerativeAI_2025.png[In contrast to predictive AI, generative AI, or gen AI for short, is AI technology that relies on deep learning models trained on large data sets to create new content. Generative AI tends to be computationally expensive and benefit greatly from GPU acceleration.
+<strong>Alt Text:</strong> Generative AI uses larger set of data and models to generate new, original content Conversational Q and A (ChatGPT) Document drafting (for example, blog posts proposals reports summaries Virtual try-ons Image creation (for example, art inspired by a certain film director) Music development (copying existing styles]</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_everyday_examples_of_generative_ai"><a class="anchor" href="#_everyday_examples_of_generative_ai"></a>Everyday examples of generative AI</h3>
+<div class="paragraph">
+<p>As with predictive AI, it&#8217;s likely that you&#8217;ve interacted with generative AI in your everyday life. Let&#8217;s go through some real-life examples</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_interactive_process_2"><a class="anchor" href="#_interactive_process_2"></a>📋 Interactive Process</h3>
+<div class="paragraph">
+<p><strong>Introduction:</strong> Everyday examples of generative AI
+Let' take a quick look at some everyday examples of generative AI.</p>
+</div>
+<div class="paragraph">
+<p><strong>Summary:</strong> Continue to the next topic.
+Click the Continue bar below to progress to the next topic.</p>
+</div>
+<div class="paragraph">
+<p><strong>Step 3:</strong> Google search: AI Overviews
+Just as Google uses predictive AI to offer users autocompletion options in web searches it uses generative AI in its AI Overview feature to offer users AI-generated summaries of search results AI Overview uses advanced ML algorithms to generate these summaries Since October 2024, Google has included inline links within AI Overviews so users can access source content within the AI-generated summaries</p>
+</div>
+<div class="paragraph">
+<p><strong>Step 4:</strong> Amazon review summaries
+If you&#8217;ve shopped on Amazon recently, you have likely noticed AI-generated summaries of product reviews These summaries can distill hundreds or even thousands of customer reviews of a product down to a single, easy-to-read paragraph that calls out what customers liked or did not like about the product. The AI that reads all of those reviews and writes a summary of them is an example of generative AI.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_other_examples_of_generative_ai"><a class="anchor" href="#_other_examples_of_generative_ai"></a>Other examples of generative AI</h3>
+<div class="paragraph">
+<p>Let' take a look at some other examples of generative AI.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_chatbots"><a class="anchor" href="#_chatbots"></a>Chatbots</h3>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ChatGPT_logo.png" alt="Chatbots such as ChatGPT" width="are examples of generative AI.">
+</div>
+</div>
+<div class="paragraph">
+<p>A chatbot is a computer program designed to simulate conversation with human users especially over the internet. It uses AI techniques to understand language and respond accordingly. Chatbots can be found in messaging applications websites and other platforms where they help users with tasks like answering questions providing information, or even engaging in casual conversation. Chatbots such as ChatGPT, are examples of generative AI because they can generate new content. For example, a user might write a prompt asking ChatGPT to write a sonnet, and ChatGPT would write the poem. Likewise, a user could write a prompt asking ChatGPT to write code to perform a certain task, and ChatGPT would generate the code.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_benefits_of_chatbots"><a class="anchor" href="#_benefits_of_chatbots"></a>Benefits of chatbots</h3>
+<div class="paragraph">
+<p>Chatbots offer users the following benefitsFast generation of text-based content: With chatbots such as ChatGPT, users can quickly generate all manner of text-based content about practically any subject one could imagine, and do so much faster than a human could. Code generation: In addition to writing in standard prose, chatbots are often capable of writing code for a variety of usesTranslation: Many chatbots can also translate text from one language to another, again much faster than a human could.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_enhancing_sporting_events"><a class="anchor" href="#_enhancing_sporting_events"></a>Enhancing sporting events</h3>
+<div class="imageblock">
+<div class="content">
+<img src="_images/stock-image.jpg" alt="At the Wimbledon Tennis Championships IBM uses generative AI to enhance the fan experience for online" width="application" height="and TV users and as well as assess player performance.">
+</div>
+</div>
+<div class="paragraph">
+<p>IBM uses generative AI in the form of its Watson X platform and a Wimbledon-specific AI model to process more than 2.5 million data points during the tournament to deliver real-time data insights which are fed to producers and commentators providing the TV coverage, enhancing the viewing experience. The model can generate tennisspecific content such as player profiles which are shared with fans to improve their experience. IBM also uses its AI to create highlight reels as well as the commentary for those highlights which also serves to enhance the fan experience. The AI is capable of grasping nuances such as drop shots and other player tactics which provides players and their coaches with valuable insights IBM&#8217;s generative AI can also assess playerss chances of winning and even provide suggestions for refining their play strategies</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_benefits_of_using_ai_to_enhance_experiences_of_sporting_events"><a class="anchor" href="#_benefits_of_using_ai_to_enhance_experiences_of_sporting_events"></a>Benefits of using AI to enhance experiences of sporting events</h3>
+<div class="paragraph">
+<p>Using AI to enhance usersss experiences of sporting events provides the following benefitsReal-time data insights Data insights created by generative AI are sent almost instantly to broadcasters and commentators so those insights can be shared with the viewing audience.AI-generated content: Generative AI can create such things as player profiles that can enhance the audience&#8217;s experience of the event. AI can also generate highlight reels and accompanying commentary for those fans unable to watch the live event.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_now_pause_for_a_knowledge_check"><a class="anchor" href="#_now_pause_for_a_knowledge_check"></a>Now, pause for a knowledge check.</h3>
+<div class="paragraph">
+<p>Do you know the difference between predictive AI and generative AI? Drag each card to the type of AI to which it belongs</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sorting_activity_interactive_sorting"><a class="anchor" href="#_sorting_activity_interactive_sorting"></a>🗂️ Sorting Activity: Interactive Sorting</h3>
+<div class="paragraph">
+<p><strong>Categories:</strong>
+* Predictive AI
+* Generative AI</p>
+</div>
+<div class="paragraph">
+<p><strong>Items to Sort:</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Predictive AI:</strong>
+* Autocomplete in a texting app
+* Netflix making a movie recommendation
+* A logistics company identifying the optimal route for its delivery trucks
+* An online retailer making a product recommendation based on items in your cart
+* Identifying the banking transactions most likely to involve fraud</p>
+</div>
+<div class="paragraph">
+<p><strong>Generative AI:</strong>
+* A chatbot writing sonnet based on a text prompt
+* Amazon summarizing customers' reviews of a product
+* A chatbot writing code
+* AI creating a highlight reel from a sporting event
+* AI generating player profiles during a tennis tournament</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_what_is_a_large_language_model_llm"><a class="anchor" href="#_what_is_a_large_language_model_llm"></a>What is a large language model (LLM)?</h3>
+<div class="paragraph">
+<p>A large language model (LLM) is a type of AI program designed to understand and generate human language. It&#8217;s referred to as 'large' because it&#8217;s built on huge amounts of text data, which it uses to learn patterns and relationships in language. LLMs can answer questions generate text, translate languages and perform other language-related tasks with a high level of accuracy and fluency.</p>
+</div>
+<div class="paragraph">
+<p>Since November 2022, when ChatGPT launched, people have tended to conflate LLMs with AI in general. In reality, AI is the broader topic and LLMs are advanced tools within the larger AI ecosystem.</p>
+</div>
+<div class="paragraph">
+<p>It takes an incredible amount of resources and expertise to create an LLM; the vast majority of organizations are not capable of building their own LLM. LLMs are what make chatbots such as ChatGPT possible, and they enable the seemingly limitless potential that AI has to offer.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_using_models_with_generative_ai"><a class="anchor" href="#_using_models_with_generative_ai"></a>Using models with generative AI</h3>
+<div class="paragraph">
+<p>Very few organizations have the resources data, and expertise necessary to build their own LLMs from scratch (this is sometimes referred to as model training). Organizations that are interested in generative AI will most likely start by using one of several foundation models however, those models require additional work before they can be used effectively. There are a variety of approaches for accomplishing this</p>
+</div>
+<div class="paragraph">
+<p>A foundation model is a type of ML model pretrained to perform a range of tasks Foundation models are programmed to function with a general contextual understanding of patterns structures and representations This foundational comprehension of how to communicate and identify patterns creates a baseline of knowledge that can be modified, or fine-tuned, to perform domain-specific tasks for just about any industry. Examples of foundation models include GPT, Claude, and Llama.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/TheBalancingActOfUsingFoundationModels.jpg" alt="The balancing act of using foundation models Foundation models still need more work to be useful Prompt tuning allows data scientists to adapt models offering 'sgood enough&#8217;s accuracy but doing it with less resources Retrieval-augmented generation (RAG) is a method for getting better answers from a generative AI application by linking an LLM to an external resource Fine tuning foundation models requires a high amount of resources (data" width="hardware" height="people) Training a foundation model from scratch requires an unrealistic amount of computing">
+</div>
+</div>
+<div class="paragraph">
+<p>Click the plus () signs in the following interactive exercise to read more about models and different approaches to using them.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_interactive_accordion"><a class="anchor" href="#_interactive_accordion"></a>Interactive Accordion</h3>
+<div class="paragraph">
+<p><strong>Tokens</strong>
+Tokens are small units of textsuch as words subwords or characters that have semantic meaning for a model. To process language, LLMs break down text into tokens These tokens are how the model 'readsss and 'writesss language, helping it understand meaning, context, and grammar. For a general sense of the word-to-context ratio, a sentence containing 10 words might be 15 to 20 tokensEvery model has a limit to the number of tokens that can be included in the input prompt as well as the number of tokens that appear in the generated output from the model. This limit is sometimes called context window length or context window.In many ways tokens represent the currency of AI, and token cost is likely to be a consideration for enterprise organizations using AI.</p>
+</div>
+<div class="paragraph">
+<p><strong>Model training</strong>
+Model training refers to the initial phase of building the AI/ML model in which the model learns from a large dataset to understand patterns relationships and features in the data. Creating AI foundation models from scratch can be very resource- and time-intensive and is in reach of only a few enterprise customers</p>
+</div>
+<div class="paragraph">
+<p><strong>Fine-tuning</strong>
+Fine-tuning is a technique that involves taking a pretrained generative AI model and further training it on a specific dataset or for a specific task. Fine-tuning requires a labeled dataset that is specific to the task to train the model with examples of input-output pairs related to that task. Although fine-tuning requires significantly less data than the original training process it still generally involves a large investment of resources and vast amounts of data. In general, fine-tuning is more involved and labor intensive than prompt-tuning.</p>
+</div>
+<div class="paragraph">
+<p><strong>Retrieval-augmented generation (RAG)</strong>
+Retrieval-augmented generation (RAG) is a method for getting better answers from a generative AI application by linking an LLM to an external resource. RAG provides a means to supplement the data that exists within an LLM with external knowledge sourcesfor example, data repositories collections of text, and pre-existing documentation. These resources are segmented, indexed in a vector database, and used as reference material to deliver more accurate answers RAG is useful because it directs the LLM to retrieve specific, real-time information from a chosen source (or sources of truth. RAG can save money by providing a custom experience without the expense of model training and fine-tuning. It can also save resources by sending only the most relevant information (rather than lengthy documents when querying an LLM. As of this writing, RAG is one of the most popular approaches to working with foundation models</p>
+</div>
+<div class="paragraph">
+<p><strong>Prompt engineering</strong>
+Prompt engineering refers to the process of carefully crafting prompts entered into LLMs to generate accurate, high-quality outputs It does not require coding skills it requires clear communication, logic, and an understanding of how the AI worksEffective prompting starts with structure. There is no single right way to do it, but successful approaches share a consistent design logic: they make intent explicit and repeatable. One useful structure frames each interaction around these four elements Context: Supply the background and objectives Role: Assign the model a perspective or domain identity. Clarification: Encourage the model to ask questions before acting. Task: Assign a specific job to perform. This is only one of many proven methods Several other prompt engineering frameworks have emerged across the industry, each emphasizing a different aspect of clarity and control. These frameworks share the same intent: to transform prompting from ad hoc experimentation into a disciplined design practice.Prompt engineering requires less technical knowledge than prompt-tuning.</p>
+</div>
+<div class="paragraph">
+<p><strong>Prompt-tuning</strong>
+Taking the discipline of prompt engineering to a new level, prompt-tuning is a technique data scientists use to optimize the prompts or instructions a user gives to an AI model to experiment with different prompt formats and wording to achieve the desired results In some cases prompt-tuning allows organizations to adapt models and achieve 'good enough' accuracy but to do it with less resources Prompt-tuning requires more technical knowledge than prompt engineering; it involves using a small, specialized dataset to train a set of numeric vectors (often referred to as 'oft promptss that are prepended to the input. Unlike prompt engineering, prompt-tuning requires data science expertise.Prompt-tuning is often contrasted with fine-tuning AI models which tends to require more effort and resources</p>
+</div>
+<div class="paragraph">
+<p><strong>Model inferencing</strong>
+Model inferencing is the phase in which the trained AI/ML model is put to use and can make predictions generate text, classify data, or perform any other task it was designed for. During inference, the trained model takes in new, unseen data and produces outputs based on its learned patterns</p>
+</div>
+<div class="paragraph">
+<p>The following lesson covers model inferencing in more depth.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_potential_issues_with_llms"><a class="anchor" href="#_potential_issues_with_llms"></a>Potential issues with LLMs</h3>
+<div class="paragraph">
+<p>As incredibly powerful as LLMs are, there are issues associated with them that you should be aware of as you discuss AI.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_massive_energy_water_and_resource_costs"><a class="anchor" href="#_massive_energy_water_and_resource_costs"></a>Massive energy, water, and resource costs</h3>
+<div class="paragraph">
+<p>Building an LLM from scratch is prohibitively expensive for most organizations Of course, there&#8217;s the hardware that&#8217;s required, along with data centers and other expensesand that&#8217;s before you factor in the cost of training the LLM.The energy cost alone associated with training and maintaining an LLM is staggering, both from financial and sustainability perspectives For example, training GPT-3 (with its 175 billion parameters consumed an estimated 1,287 megawatt hours of electricity, which is roughly equivalent to the energy consumption of an average American household over 120 years</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/LEDbulb1.jpg" alt="Photo of an LED lightbulb Text: 'sA single LLM interaction may consume as much power as leaving a low-brightness LED lightbulb on for one hour.'s - Alex de Vries VU Amsterdam">
+</div>
+</div>
+<div class="paragraph">
+<p>In addition to the electricity demands of LLMs such models also require a tremendous amount of water to cool the hardware and data centers used by LLMs According to scientists from the University of California, Riverside (<a href="https://arxiv.org/pdf/2304.03271" class="bare">https://arxiv.org/pdf/2304.03271</a>), the global AI demand for water is projected to account for 4.2 to 6.6 billion cubic meters of water withdrawal in 2027, which is more than half of the annual water withdrawal of the entire United Kingdom. Even the cost of maintaining an LLM is exceptional. Consider this Back in 2023, according to research firm SemiAnalysis (<a href="https://newsletter.semianalysiscom/p/the-inference-cost-of-search-disruption" class="bare">https://newsletter.semianalysiscom/p/the-inference-cost-of-search-disruption</a>), it cost OpenAI approximately 700,000 a day in compute hardware costs to operate ChatGPT. That&#8217;s about 255 million a year; however, the current cost of operating ChatGPT is likely much greater. An estimate included in a TechCrunch (<a href="http://echcrunch.com/2025/11/14/leaked-documentsshed-light-into-how-much-openai-paysmicrosoft/::textWAITLIST20NOW,the20first20half20of202025" class="bare">http://echcrunch.com/2025/11/14/leaked-documentsshed-light-into-how-much-openai-paysmicrosoft/::textWAITLIST20NOW,the20first20half20of202025</a>.) story had OpenAI spending roughly 3.8 billion on inference in 2024 and an estimated 8.65 billion on inference in the first nine months of 2025.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_issues_with_transparency_in_model_building"><a class="anchor" href="#_issues_with_transparency_in_model_building"></a>Issues with transparency in model building</h3>
+<div class="paragraph">
+<p>In most instances there is no way to know for sure which sources were used to create and train a particular LLM. As the user of the LLM, you have no way of knowing for certain whether the content used to train the model was accurate, which could lead to flawed, incomplete, or erroneous results</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_bias_and_model_building"><a class="anchor" href="#_bias_and_model_building"></a>Bias and model building</h3>
+<div class="paragraph">
+<p>Unfortunately, it is impossible to prevent biases from leaking into models which can affect output. For example, minorities may be underrepresented in the data used to train the model, which may lead to skewed outcomes A 2023 study found that four recently published LLMs were three to six times more likely to choose an occupation that stereotypically aligns with a person&#8217;s gender than what official occupation data would suggest. And despite the best intentions of the model creators there is a risk of overcorrection for bias (such as racial bias, that leads to historically inaccurate results</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_hallucinations"><a class="anchor" href="#_hallucinations"></a>Hallucinations</h3>
+<div class="paragraph">
+<p>Sometimes LLMs can generate responses that appear coherent, grammatically correct, and are stated in a manner that suggests they are accurate, when in fact, they are nonsensical or factually incorrect. Such responses are generally referred to as hallucinations For example, consider how ChatGPT 3.5 responded to the following prompt in July 2024: How many 'm&#8217;s are there in 'Weather'</p>
+</div>
+<div class="paragraph">
+<p>ChatGPT 3.5 claimed there was one 'sm&#8217;s in 'sWeather.'s Let' see how the chatbot did with a second chance.</p>
+</div>
+<div class="paragraph">
+<p>Later versions of ChatGPT are more likely to answer this question correctly. On a similar note, some older versions of LLMs had issues with counting the number of R&#8217;s in 'Strawberry.' This flaw is a perfect demonstration of tokenization. LLMs don&#8217;st process text character-by-character; they use larger chunks called tokens Instead of seeing ten individual letters (S-t-r-a-w-b-e-r-r-y), the model might see the word broken into just two tokens such as 'sStraw&#8217;s and 'sberry&#8217;s. Because the model treats 'sberry&#8217;s as a single, indivisible unit of meaning, it processes the entire block without breaking it down into its constituent letters The three 'sR&#8217;s are therefore hidden inside these larger tokens which made it difficultor in some cases impossiblefor the model to perform the character-level counting task accurately.</p>
+</div>
+<div class="paragraph">
+<p>Content generated by AI should be reviewed by humans to confirm its accuracy.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_issues_related_to_data_recency"><a class="anchor" href="#_issues_related_to_data_recency"></a>Issues related to data recency</h3>
+<div class="paragraph">
+<p>The information that LLMs have been trained on doesn&#8217;t continuously gather updates there&#8217;s an effective 'cutoff' date to an LLM&#8217;s knowledge. As a result, that source material can become outdated and no longer relevant.Data scientists and researchers may use RAG to address such issues For example, implementing RAG architecture into an LLM-based question-answering system provides a line of communication between an LLM and the chosen additional knowledge sources The LLM is able to crossreference and supplement its internal knowledge, providing a more reliable and accurate output for the user making a query.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_issues_related_to_data_sovereignty"><a class="anchor" href="#_issues_related_to_data_sovereignty"></a>Issues related to data sovereignty</h3>
+<div class="paragraph">
+<p>Data sovereignty refers to the principle that data (such as personal information, financial records or intellectual property) is subject to the laws and regulations of the country or region (such as the European Union) where it is collected, processed, or stored. Many nations have laws related to data sovereignty. When it comes to LLMs and data sovereignty, it matters a great deal who owns and operates that LLM, where that LLM' servers are located (which may not always be obvious to the end user of the LLM), and what data may have been used to train that model.Consider the following example. A user in Country A enters a prompt containing sensitive data into an LLM, and that LLM has its servers in Country B. The user in Country A has likely lost control of that data, which now could be stored in Country B, used to train future models or inadvertently exposed to other users of the LLMall in violation of Country A' data privacy laws</p>
+</div>
+<div class="paragraph">
+<p>Red Hat' open hybrid cloud portfolio, including Red Hat AI, provides sovereignty solutions to address such issues</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_risks_related_to_copyright_and_privacy"><a class="anchor" href="#_risks_related_to_copyright_and_privacy"></a>Risks related to copyright and privacy</h3>
+<div class="paragraph">
+<p>There may be copyright or other legal issues associated with the content used to train the LLM.For example, suppose that an LLM was trained on copyrighted material without the permission of the respective copyright holders If your organization were to use that LLM, and you inadvertently violated the rights of copyright holders your organization could be at risk of being sued.</p>
+</div>
+<div class="paragraph">
+<p>This legal issue is not merely theoretical; in December 2023, the New York Times sued OpenAI and Microsoft for copyright infringement, contending that millions of articles published by the newspaper were used to train chatbots As of this writing, the case is pending.In December 2025, the New York Times sued Perplexity AI, claiming that the artificial intelligence startup repeatedly violated the newspaper' copyrights by copying, distributing, and displaying Times articles without permission.</p>
+</div>
+<div class="paragraph">
+<p>There are also privacy issues associated with LLMs There is no way to get an LLM to 'forget' information it&#8217;s been trained on. It&#8217;s not like a spreadsheet, where you could delete a column that contained private information such as dates of birth, Social Security numbers or sensitive medical information. Also, as it becomes easier to use AI to create so-called 'deepfakesss (i.e., highly convincing fake or manipulated information, such as photos videos or audio recordings, the opportunities to use AI to engage in unethical or illegal behavior increase.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_risks_of_mass_adoption"><a class="anchor" href="#_risks_of_mass_adoption"></a>Risks of mass adoption</h3>
+<div class="paragraph">
+<p>Currently, there are multiple LLMs in use; however, if one model overwhelmingly beats the competition, and that LLM is effectively, the only LLM, it could change society&#8217;s common understanding of history based on quirks in how the model was trained.</p>
+</div>
+<div class="paragraph">
+<p>Red Hat believes that the future of AI involves open source practices and transparency in datasets</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_takeaways"><a class="anchor" href="#_takeaways"></a>Takeaways</h3>
+<div class="paragraph">
+<p>Here are the takeaways from this lesson:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Predictive AI is a common type of artificial intelligence system used in business applications that predicts or forecasts outcomes based on historical data.</p>
+</li>
+<li>
+<p>Predictive AI is an integral part of many everyday activities such as conducting web searches texting, shopping online, and engaging with video and music streaming services</p>
+</li>
+<li>
+<p>Data science is an interdisciplinary field that leverages mathematical, statistical, and computational techniques to extract knowledge and insights from structured and unstructured data.</p>
+</li>
+<li>
+<p>Examples of enterprises using predictive AI include logistic companies employing it to optimize delivery routes and prevent package theft and banks or other financial institutions using it to identify fraud, money laundering, and other financial crimes</p>
+</li>
+<li>
+<p>Generative AI is AI technology that relies on deep learning models trained on large data sets to create new content.</p>
+</li>
+<li>
+<p>Some examples of generative AI include AI-generated summaries of customer reviews on Amazon, chatbots such as ChatGPT generating content based on a text prompt, and AI-generated highlight reels from sporting events</p>
+</li>
+<li>
+<p>A large language model (LLM) is a type of AI program designed to understand and generate human language.</p>
+</li>
+<li>
+<p>Creating an LLM from scratch requires a tremendous amount of money, expertise, and resources For all but a handful of organizations creating such a model is out of reach; most organizations are likely to start with a foundation model.</p>
+</li>
+<li>
+<p>There are a variety of approaches an organization might use when working with a foundation model. One of the most popular approaches is retrieval-augmented generation (RAG), a method that involves getting better answers from a generative AI application by linking an LLM to an external resource.</p>
+</li>
+<li>
+<p>There are several issues associated with LLMs including massive energy and resource costs a lack of transparency with regard to how models are trained, biases in model training, hallucinations data recency, data sovereignty issues and issues related to copyright and privacy.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_knowledge_check"><a class="anchor" href="#_knowledge_check"></a>Knowledge check</h3>
+<div class="listingblock knowledge-check">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;div class="knowledge-check" data-question="Which of the following statements does NOT describe an example of predictive AI?" data-correct="B" data-correct-feedback="Correct! Although Amazon does use AI to generate summaries of customer reviews that is an example of generative AI, not predictive AI." data-incorrect-feedback="Incorrect. Please try again.""&gt;
+  &lt;div class="knowledge-check-question"&gt;
+    &lt;strong&gt;Which of the following statements does NOT describe an example of predictive AI?&lt;/strong&gt;
+  &lt;/div&gt;
+  &lt;div class="knowledge-check-options"&gt;
+        &lt;label class="knowledge-check-option"&gt;&lt;input type="radio" name="kc-8525" value="A" /&gt; &lt;span&gt;An iPhone user takes advantage of the autocomplete feature when texting to compose a text message more quickly.&lt;/span&gt;&lt;/label&gt;
+        &lt;label class="knowledge-check-option"&gt;&lt;input type="radio" name="kc-8525" value="B" /&gt; &lt;span&gt;Amazon uses AI to generate text summaries of hundreds or thousands of customer reviews so users do not need to read all the product reviews for an individual product.&lt;/span&gt;&lt;/label&gt;
+        &lt;label class="knowledge-check-option"&gt;&lt;input type="radio" name="kc-8525" value="C" /&gt; &lt;span&gt;Netflix uses AI to make recommendations to users based on their viewing history and other data.&lt;/span&gt;&lt;/label&gt;
+        &lt;label class="knowledge-check-option"&gt;&lt;input type="radio" name="kc-8525" value="D" /&gt; &lt;span&gt;UPS uses AI to determine which delivery addresses are at the highest risk of package theft so it can reroute packages to a more secure location.&lt;/span&gt;&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;button class="knowledge-check-submit"&gt;Check Answer&lt;/button&gt;
+  &lt;div class="knowledge-check-feedback" style="display: none;"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock knowledge-check">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;div class="knowledge-check" data-question="Which statement regarding predictive AI is most accurate?" data-correct="D" data-correct-feedback="Correct! Banks use predictive AI to identify money laundering." data-incorrect-feedback="Incorrect. Please try again.""&gt;
+  &lt;div class="knowledge-check-question"&gt;
+    &lt;strong&gt;Which statement regarding predictive AI is most accurate?&lt;/strong&gt;
+  &lt;/div&gt;
+  &lt;div class="knowledge-check-options"&gt;
+        &lt;label class="knowledge-check-option"&gt;&lt;input type="radio" name="kc-8773" value="A" /&gt; &lt;span&gt;A good example of predictive AI is ChatGPT.&lt;/span&gt;&lt;/label&gt;
+        &lt;label class="knowledge-check-option"&gt;&lt;input type="radio" name="kc-8773" value="B" /&gt; &lt;span&gt;It is used to generate text, illustrations and music.&lt;/span&gt;&lt;/label&gt;
+        &lt;label class="knowledge-check-option"&gt;&lt;input type="radio" name="kc-8773" value="C" /&gt; &lt;span&gt;It is a relatively new technology.&lt;/span&gt;&lt;/label&gt;
+        &lt;label class="knowledge-check-option"&gt;&lt;input type="radio" name="kc-8773" value="D" /&gt; &lt;span&gt;It can be used in the financial industry to identify money laundering.&lt;/span&gt;&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;button class="knowledge-check-submit"&gt;Check Answer&lt;/button&gt;
+  &lt;div class="knowledge-check-feedback" style="display: none;"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock knowledge-check">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;div class="knowledge-check" data-question="Which of the following tools is most closely associated with the work data scientists perform?" data-correct="A" data-correct-feedback="Correct! Among the choices presented, Jupyter Notebooks are the most closely associated with the work that data scientists typically perform." data-incorrect-feedback="Incorrect. Please try again.""&gt;
+  &lt;div class="knowledge-check-question"&gt;
+    &lt;strong&gt;Which of the following tools is most closely associated with the work data scientists perform?&lt;/strong&gt;
+  &lt;/div&gt;
+  &lt;div class="knowledge-check-options"&gt;
+        &lt;label class="knowledge-check-option"&gt;&lt;input type="radio" name="kc-607" value="A" /&gt; &lt;span&gt;Jupyter Notebooks&lt;/span&gt;&lt;/label&gt;
+        &lt;label class="knowledge-check-option"&gt;&lt;input type="radio" name="kc-607" value="B" /&gt; &lt;span&gt;Android Studio&lt;/span&gt;&lt;/label&gt;
+        &lt;label class="knowledge-check-option"&gt;&lt;input type="radio" name="kc-607" value="C" /&gt; &lt;span&gt;Bitbucket&lt;/span&gt;&lt;/label&gt;
+        &lt;label class="knowledge-check-option"&gt;&lt;input type="radio" name="kc-607" value="D" /&gt; &lt;span&gt;Visual Studio Code&lt;/span&gt;&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;button class="knowledge-check-submit"&gt;Check Answer&lt;/button&gt;
+  &lt;div class="knowledge-check-feedback" style="display: none;"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock knowledge-check">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;div class="knowledge-check" data-question="True or false: Generative AI involves the use of deep learning models" data-correct="A" data-correct-feedback="True. Generative AI involves the use of deep learning models"'''
+
+=== 🧠 Knowledge Check: Which of the following statements regarding large language models (LLMs is most accurate?
+
+*Answer Options:*
+A. They require a tremendous amount of resources and expertise to create and train. ✅
+B. They typically provide full transparency regarding how they are trained and developed.
+C. It is easy to delete information from LLMs
+D. Most LLMs are not trained on copyrighted material.
+
+*✅ Correct Feedback:* Correct! LLMs require a tremendous amount of resources and expertise to create and train. Creating an LLM from scratch is beyond the reach of most organizations" data-incorrect-feedback="Incorrect. Please try again.""&gt;
+  &lt;div class="knowledge-check-question"&gt;
+    &lt;strong&gt;True or false: Generative AI involves the use of deep learning models&lt;/strong&gt;
+  &lt;/div&gt;
+  &lt;div class="knowledge-check-options"&gt;
+        &lt;label class="knowledge-check-option"&gt;&lt;input type="radio" name="kc-3072" value="A" /&gt; &lt;span&gt;True&lt;/span&gt;&lt;/label&gt;
+        &lt;label class="knowledge-check-option"&gt;&lt;input type="radio" name="kc-3072" value="B" /&gt; &lt;span&gt;False&lt;/span&gt;&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;button class="knowledge-check-submit"&gt;Check Answer&lt;/button&gt;
+  &lt;div class="knowledge-check-feedback" style="display: none;"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="introduction.html">Introduction</a></span>
+  <span class="next"><a href="inferencing-optimization.html">Inferencing and Optimization</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AI Security and Using AI Responsibly :: AI Fundamentals</title>
+    <link rel="prev" href="agentic-ai.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../..">AI Fundamentals</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ai-fundamentals" data-version="1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">AI Fundamentals</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="introduction.html">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="predictive-generative-ai.html">Predictive AI and Generative AI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="inferencing-optimization.html">Inferencing and Optimization</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="agentic-ai.html">Agentic AI</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="ai-security-responsibility.html">AI Security and Using AI Responsibly</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">AI Fundamentals</span>
+    <span class="version">1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">AI Fundamentals</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">AI Fundamentals</a></li>
+    <li><a href="ai-security-responsibility.html">AI Security and Using AI Responsibly</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">AI Security and Using AI Responsibly</h1>
+<div class="sect2">
+<h3 id="_lesson_overview"><a class="anchor" href="#_lesson_overview"></a>Lesson overview</h3>
+<div class="paragraph">
+<p>Artificial intelligence (AI) brings enormous opportunities but also unique risks As AI adoption scales up, it increases risks for enterprises and individuals This lesson takes a high-level look at AI security and provides guidance on using AI responsibly.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_lesson_objectives"><a class="anchor" href="#_lesson_objectives"></a>Lesson objectives</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Define AI security and AI safety.</p>
+</li>
+<li>
+<p>Describe examples of risks related to AI security and AI safety.</p>
+</li>
+<li>
+<p>Explain, at a high level, steps organizations can take to mitigate risks related to AI security and AI safety</p>
+</li>
+<li>
+<p>Summarize actions users can take to use AI safely and responsibly.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_ai_security_vs_ai_safety"><a class="anchor" href="#_ai_security_vs_ai_safety"></a>AI security vs AI safety</h3>
+<div class="imageblock">
+<div class="content">
+<img src="_images/stock-image.jpg" alt="AI security and AI safety are related but distinct concepts Although it&#8217;s necessary to consider and employ both to reduce risk" width="they address different challenges">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ai_security"><a class="anchor" href="#_ai_security"></a>AI security</h3>
+<div class="paragraph">
+<p>AI security focuses on protecting the confidentiality, integrity, and availability of AI systems The goal is to prevent malicious actors from attacking or manipulating those systems AI security involves protecting against threats that can arise from:Exploitation of vulnerabilities in software componentsMisconfigured systems or broken authentication allowing unauthorized access to sensitive enterprise data.Prompt injection (a type of security vulnerability or attack in which a user attempts to hijack or manipulate the AI model' instructions by sneaking in unauthorized or malicious commands within their input, that is the prompt).Model 'jailbreaking' (bypassing safety guardrails for example, ethical, legal, or content policies to generate restricted, harmful, or prohibited content).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ai_safety"><a class="anchor" href="#_ai_safety"></a>AI safety</h3>
+<div class="paragraph">
+<p>In AI contexts safety means trustworthiness fairness and ethical alignment. AI safety helps maintain the intended behavior of AI systems keeping them aligned with company policies regulations and ethical standards The risks surrounding AI safety are less about system compromise and more related to what an AI system produces Issues related to AI safety include:Harmful or toxic language (for example, an AI model' responses could contain offensive or abusive content).Bias or discrimination in responsesHallucinations (plausible-sounding but false answers.Dangerous or misleading recommendations (for example, suggesting that users put glue on pizza or swallow drain cleaner to treat a sore throat).</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_detecting_ai_security_threats"><a class="anchor" href="#_detecting_ai_security_threats"></a>Detecting AI security threats</h3>
+<div class="paragraph">
+<p>Organizations looking to protect their team and technology often layer their strategiesa single line of defense likely won&#8217;t cut it. Common tactics include the following:</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_interactive_accordion"><a class="anchor" href="#_interactive_accordion"></a>Interactive Accordion</h3>
+<div class="paragraph">
+<p><strong>Behavioral analysis</strong>
+This type of threat detection can catch anomalies and deviations within a network. After tracking typical datasets patterns and activity, it becomes intimately familiar with the AI system&#8217;s typical behavior. When it comes across atypical behavior, such as biased contentor worse, public-facing passwords in cleartext formatit triggers an alert.</p>
+</div>
+<div class="paragraph">
+<p><strong>Runtime threat detection</strong>
+If an adversary is scanning an environment for possible exploitations existing runtime security can detect repeated probes and sound the alarm. Security teams can automate and enhance this technique with AI to recognize threats and trigger alerts sooner.</p>
+</div>
+<div class="paragraph">
+<p><strong>Predictive threat intelligence</strong>
+This technology anticipates future events by referencing historical data to make predictions about what will happen next. For example, if an adversary were targeting fintech systems with ransomware, predictive threat intelligence would assess the organizational posture against the likelihood of a successful attack.</p>
+</div>
+<div class="paragraph">
+<p><strong>Enhanced data processing</strong>
+AI workloads contain a lot of datatypically, billions and billions of data points AI security has to process that data in order to conclude whether it&#8217;s at risk, confidential, or available. Enhanced data processing can detect anomalies and threats in the environment faster than humans or traditional processing technology, so teams can act quickly.</p>
+</div>
+<div class="paragraph">
+<p><strong>Attack path analysis</strong>
+This strategy involves mapping potential vulnerabilities and opportunities for threats For example, understanding how a threat may enter an organization' systems and reach sensitive data helps security teams identify which path an attack would come from and block it.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_ai_security_best_practices"><a class="anchor" href="#_ai_security_best_practices"></a>AI security best practices</h3>
+<div class="imageblock">
+<div class="content">
+<img src="_images/stock-image.jpg" alt="Every phase of the AI lifecycle has vulnerabilities that need protection. Fortunately" width="there are practices in which organizations can engage to help mitigate such vulnerabilities">
+</div>
+</div>
+<div class="paragraph">
+<p>Elements of a healthy AI security strategy that can help protect an organization' AI models data, and privacy include the following best practices</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_interactive_accordion_2"><a class="anchor" href="#_interactive_accordion_2"></a>Interactive Accordion</h3>
+<div class="paragraph">
+<p><strong>Adopting AI guardrails</strong>
+Guardrails help generative AI models filter hateful, abusive, or profane speech, personally identifiable information, competitive information, or other domain-specific constraints</p>
+</div>
+<div class="paragraph">
+<p><strong>Protecting training data</strong>
+AI systems tend to be as reliable as the data they were trained on. Original training data should be secured behind firewalls or other safeguards against tampering or manipulation to protect the model&#8217;s integrity and outputs</p>
+</div>
+<div class="paragraph">
+<p><strong>Implementing strong platform security</strong>
+Protecting the platform on which AI workloads run can help ensure their health and reliability. If the platform is secure, threat actors have to work harder to inflict harm.</p>
+</div>
+<div class="paragraph">
+<p><strong>Focusing on supply chain and systems security</strong>
+Organizations should adapt existing best practices in supply chain and systems security to cover AI workloads Just as traditional software supply chain security verifies the integrity of open source libraries AI supply chain security can account for the provenance and integrity of training data, pretrained models and third-party AI components</p>
+</div>
+<div class="paragraph">
+<p><strong>Customizing strategies</strong>
+AI workloads are unique, rarely fitting into one-size-fitsall security solutions Security strategy should be tailored to an organization' individual AI workloads designs and data.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_using_ai_responsibly"><a class="anchor" href="#_using_ai_responsibly"></a>Using AI responsibly</h3>
+<div class="paragraph">
+<p>So what can you as an individual user do to mitigate risks associated with AI security and safety? And how can you use AI responsibly?</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Don&#8217;st enter confidential or sensitive information: In general, unless you know otherwise, treat an AI chat window as a public forum. Do not paste any code, internal documents customer names financial figures or unreleased product details into a public-facing LLM (such as free versions of ChatGPT).</p>
+</li>
+<li>
+<p>Assume all input is training data: Always assume that any information you input might be used to train future versions of the model, making it discoverable by others Only use anonymized, aggregated, or public data.</p>
+</li>
+<li>
+<p>Use approved, internal tools Where available, use company-licensed or approved AI tools that guarantee inputs are not used for training and have strict data retention policies If you&#8217;sre unsure, ask your IT department.</p>
+</li>
+<li>
+<p>Review all AI-generated output: Although LLM responses to prompts are typically stated in a confident manner, do NOT assume AI-generated output is factual or accurate. AI models can hallucinate (generate false, plausible-sounding information). Always crossreference all facts figures quoted statements citation information, and so forth with verified, trusted internal or external sources In addition, LLMs can sometimes include copyrighted material verbatim in their responses and using such content without the permission of the respective copyright holder could result in copyright infringement.</p>
+</li>
+<li>
+<p>Maintain professionalism: Do not engage in inappropriate, biased, or inflammatory conversations with an AI chatbot. Likewise, do not prompt the AI to discuss or comment on internal company politics rival companies unreleased products or sensitive client matters Assume your prompts and conversations could be audited or made public and have a negative impact on your reputation (and that of your employer) if you engage with AI in an unprofessional manner.</p>
+</li>
+<li>
+<p>Limit personal sharing: Avoid disclosing any private or sensitive personal details (e.g., home address personal schedules family names to public AI tools as this information can be harvested and used for targeted attacks against you or your colleagues</p>
+</li>
+<li>
+<p>Be vigilant regarding social engineering attempts Malicious actors may use AI to craft highly convincing phishing emails deepfake voicemails or seemingly legitimate documents It' not enough anymore to look for poorly constructed or written emails Take care before clicking links especially in emails or messages you were not expecting.</p>
+</li>
+<li>
+<p>Be skeptical toward any advice an AI may provide: If an AI offers advice on specialized areas (e.g., legal, medical, or financial), keep in mind that AI is no substitute for a licensed professional. Always consult a human expert in these domains</p>
+</li>
+<li>
+<p>Be transparent: If you&#8217;sve used AI to generate content (e.g., code, text, images or videos, be clear about that with your audience. Include disclaimers or statements regarding AI use to clarify how you used AI and to what degree you used it.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_thinking_about_your_ai_conversation"><a class="anchor" href="#_thinking_about_your_ai_conversation"></a>Thinking about your AI conversation</h3>
+<div class="paragraph">
+<p>Of course, there&#8217;s no way to prepare you for every possible AI-related conversation you might have. As always do your best to know your audience and tailor your conversation to their interests needs and expertise. Be ready to adapt if the conversation shifts and keep in mind that conversations involve two-way communication.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_takeaways"><a class="anchor" href="#_takeaways"></a>Takeaways</h3>
+<div class="paragraph">
+<p>Here are the takeaways from this lesson:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>AI security and AI safety are related but distinct concepts</p>
+</li>
+<li>
+<p>AI security focuses on protecting the confidentiality, integrity, and availability of AI systems The goal is to prevent malicious actors from attacking or manipulating those systems</p>
+</li>
+<li>
+<p>In AI contexts safety means trustworthiness fairness and ethical alignment. AI safety helps maintain the intended behavior of AI systems keeping them aligned with company policies regulations and ethical standards</p>
+</li>
+<li>
+<p>Common tactics for detecting AI security threats include behavioral analysis runtime threat detection, predictive threat analysis and enhanced data processing.</p>
+</li>
+<li>
+<p>AI security best practices include adopting AI guardrails protecting training data, implementing strong platform security, focusing on supply chain and systems security, and customizing strategies to an organization' individual AI workloads designs and data.</p>
+</li>
+<li>
+<p>Some tips for using AI responsibly include avoiding sharing sensitive or confidential information with public chatbots assuming any data shared with such a public LLM may be used to train that LLM, using IT-approved AI tools maintaining professionalism when using AI tools and being transparent with your audience in how you&#8217;sve used AI.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_congratulations"><a class="anchor" href="#_congratulations"></a>Congratulations</h3>
+<div class="paragraph">
+<p>You have completed the AI Fundamentals course!</p>
+</div>
+<div class="paragraph">
+<p>If you are interested in more information about AI, check out the following resourcesA PDF compilation of key takeaways from each lesson in this course that you can download and consult as necessary.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_media_media_content"><a class="anchor" href="#_media_media_content"></a>📱 Media: Media Content</h3>
+<div class="paragraph">
+<p>An interactive PDF containing key terms related to AI, including links to videos containing more information.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_media_media_content_2"><a class="anchor" href="#_media_media_content_2"></a>📱 Media: Media Content</h3>
+<div class="paragraph">
+<p>An abbreviated AI timeline containing major landmarks in the history and development of AI.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_media_media_content_3"><a class="anchor" href="#_media_media_content_3"></a>📱 Media: Media Content</h3>
+<hr>
+<hr>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="agentic-ai.html">Agentic AI</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
