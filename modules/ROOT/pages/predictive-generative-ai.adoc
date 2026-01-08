@@ -340,7 +340,7 @@ Here are the takeaways from this lesson:
         <label class="knowledge-check-option"><input type="radio" name="kc-8525" value="C" /> <span>Netflix uses AI to make recommendations to users based on their viewing history and other data.</span></label>
         <label class="knowledge-check-option"><input type="radio" name="kc-8525" value="D" /> <span>UPS uses AI to determine which delivery addresses are at the highest risk of package theft so it can reroute packages to a more secure location.</span></label>
   </div>
-  <button class="knowledge-check-submit">Check Answer</button>
+  <button class="knowledge-check-submit" onclick="checkKnowledgeAnswer(this)">Check Answer</button>
   <div class="knowledge-check-feedback" style="display: none;"></div>
 </div>
 ++++
@@ -357,7 +357,7 @@ Here are the takeaways from this lesson:
         <label class="knowledge-check-option"><input type="radio" name="kc-8773" value="C" /> <span>It is a relatively new technology.</span></label>
         <label class="knowledge-check-option"><input type="radio" name="kc-8773" value="D" /> <span>It can be used in the financial industry to identify money laundering.</span></label>
   </div>
-  <button class="knowledge-check-submit">Check Answer</button>
+  <button class="knowledge-check-submit" onclick="checkKnowledgeAnswer(this)">Check Answer</button>
   <div class="knowledge-check-feedback" style="display: none;"></div>
 </div>
 ++++
@@ -374,7 +374,7 @@ Here are the takeaways from this lesson:
         <label class="knowledge-check-option"><input type="radio" name="kc-607" value="C" /> <span>Bitbucket</span></label>
         <label class="knowledge-check-option"><input type="radio" name="kc-607" value="D" /> <span>Visual Studio Code</span></label>
   </div>
-  <button class="knowledge-check-submit">Check Answer</button>
+  <button class="knowledge-check-submit" onclick="checkKnowledgeAnswer(this)">Check Answer</button>
   <div class="knowledge-check-feedback" style="display: none;"></div>
 </div>
 ++++
@@ -399,7 +399,7 @@ D. Most LLMs are not trained on copyrighted material.
         <label class="knowledge-check-option"><input type="radio" name="kc-3072" value="A" /> <span>True</span></label>
         <label class="knowledge-check-option"><input type="radio" name="kc-3072" value="B" /> <span>False</span></label>
   </div>
-  <button class="knowledge-check-submit">Check Answer</button>
+  <button class="knowledge-check-submit" onclick="checkKnowledgeAnswer(this)">Check Answer</button>
   <div class="knowledge-check-feedback" style="display: none;"></div>
 </div>
 ++++

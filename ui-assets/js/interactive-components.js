@@ -1,34 +1,42 @@
 // Interactive Components for AI Fundamentals Course
 
-// Knowledge Check Component
+// Knowledge Check Component - Global function for onclick handlers
+function checkKnowledgeAnswer(button) {
+  const container = button.closest('.knowledge-check');
+  if (!container) return;
+  
+  const selected = container.querySelector('input[type="radio"]:checked');
+  const correct = container.dataset.correct;
+  const feedbackDiv = container.querySelector('.knowledge-check-feedback');
+  
+  if (!selected) {
+    feedbackDiv.textContent = 'Please select an answer.';
+    feedbackDiv.style.display = 'block';
+    feedbackDiv.className = 'knowledge-check-feedback warning';
+    return;
+  }
+  
+  const isCorrect = selected.value === correct;
+  feedbackDiv.textContent = isCorrect 
+    ? '✓ ' + container.dataset.correctFeedback
+    : '✗ ' + container.dataset.incorrectFeedback;
+  feedbackDiv.className = 'knowledge-check-feedback ' + (isCorrect ? 'correct' : 'incorrect');
+  feedbackDiv.style.display = 'block';
+  
+  // Disable all inputs
+  container.querySelectorAll('input[type="radio"]').forEach(input => {
+    input.disabled = true;
+  });
+  button.disabled = true;
+}
+
 function initKnowledgeChecks() {
   document.querySelectorAll('.knowledge-check').forEach(container => {
     const submitBtn = container.querySelector('.knowledge-check-submit');
-    if (submitBtn) {
+    if (submitBtn && !submitBtn.onclick) {
+      // Only add event listener if onclick handler isn't already set
       submitBtn.addEventListener('click', function() {
-        const selected = container.querySelector('input[type="radio"]:checked');
-        const correct = container.dataset.correct;
-        const feedbackDiv = container.querySelector('.knowledge-check-feedback');
-        
-        if (!selected) {
-          feedbackDiv.textContent = 'Please select an answer.';
-          feedbackDiv.style.display = 'block';
-          feedbackDiv.className = 'knowledge-check-feedback warning';
-          return;
-        }
-        
-        const isCorrect = selected.value === correct;
-        feedbackDiv.textContent = isCorrect 
-          ? '✓ ' + container.dataset.correctFeedback
-          : '✗ ' + container.dataset.incorrectFeedback;
-        feedbackDiv.className = 'knowledge-check-feedback ' + (isCorrect ? 'correct' : 'incorrect');
-        feedbackDiv.style.display = 'block';
-        
-        // Disable all inputs
-        container.querySelectorAll('input[type="radio"]').forEach(input => {
-          input.disabled = true;
-        });
-        submitBtn.disabled = true;
+        checkKnowledgeAnswer(this);
       });
     }
   });

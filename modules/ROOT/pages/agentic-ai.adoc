@@ -218,7 +218,7 @@ D. It requires a minimum of four AI agents working in concert.
         <label class="knowledge-check-option"><input type="radio" name="kc-4972" value="A" /> <span>True</span></label>
         <label class="knowledge-check-option"><input type="radio" name="kc-4972" value="B" /> <span>False</span></label>
   </div>
-  <button class="knowledge-check-submit">Check Answer</button>
+  <button class="knowledge-check-submit" onclick="checkKnowledgeAnswer(this)">Check Answer</button>
   <div class="knowledge-check-feedback" style="display: none;"></div>
 </div>
 ++++
