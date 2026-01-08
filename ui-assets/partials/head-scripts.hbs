@@ -3,3 +3,29 @@
     <script>function gtag(){dataLayer.push(arguments)};window.dataLayer=window.dataLayer||[];gtag('js',new Date());gtag('config','{{this}}')</script>
     {{/with}}
     <script>var uiRootPath = '{{{uiRootPath}}}'</script>
+    <script>
+    // Ensure checkKnowledgeAnswer is available immediately for onclick handlers
+    window.checkKnowledgeAnswer = function(button) {
+      const container = button.closest('.knowledge-check');
+      if (!container) return;
+      const selected = container.querySelector('input[type="radio"]:checked');
+      const correct = container.dataset.correct;
+      const feedbackDiv = container.querySelector('.knowledge-check-feedback');
+      if (!selected) {
+        feedbackDiv.textContent = 'Please select an answer.';
+        feedbackDiv.style.display = 'block';
+        feedbackDiv.className = 'knowledge-check-feedback warning';
+        return;
+      }
+      const isCorrect = selected.value === correct;
+      feedbackDiv.textContent = isCorrect 
+        ? '✓ ' + container.dataset.correctFeedback
+        : '✗ ' + container.dataset.incorrectFeedback;
+      feedbackDiv.className = 'knowledge-check-feedback ' + (isCorrect ? 'correct' : 'incorrect');
+      feedbackDiv.style.display = 'block';
+      container.querySelectorAll('input[type="radio"]').forEach(input => {
+        input.disabled = true;
+      });
+      button.disabled = true;
+    };
+    </script>
