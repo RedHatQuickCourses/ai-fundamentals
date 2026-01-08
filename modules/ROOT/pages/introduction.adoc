@@ -17,7 +17,7 @@ In this lesson, you will learn how to:
 
 === Are you ready to talk about AI?
 
-image::stock-image.jpg[Suppose you were to find yourself in an informal conversation, and talk turns to artificial intelligence. Would you know enough to hold up your end of the conversation?]
+image::stock-image-intro-1.jpg[Suppose you were to find yourself in an informal conversation, and talk turns to artificial intelligence. Would you know enough to hold up your end of the conversation?]
 
 You need to be able to discuss AI confidently.
 
@@ -27,7 +27,7 @@ Fortunately, you don't need to be a rocket scientist to talk intelligently about
 
 === Why should you care about AI?
 
-image::stock-image.jpg[So, the million-dollar question: Why is AI so important now?]
+image::stock-image-intro-2.jpg[So, the million-dollar question: Why is AI so important now?]
 
 === Why should you care about AI?
 
@@ -73,7 +73,7 @@ As of this writing, some analysts and observers have suggested that there is an 
 
 === What is artificial intelligence (AI)?
 
-image::stock-image.jpg[There are many definitions of AI; scholars and computer scientists still debate over the finer points of what the term means But for our purposes let's start with the basics]
+image::stock-image-intro-3.jpg[There are many definitions of AI; scholars and computer scientists still debate over the finer points of what the term means But for our purposes let's start with the basics]
 
 It might help to think of AI as a 'smart' computer program that learns from experience and can make decisions like a human would, but usually much faster and with more data. AI is used in things like voice assistants (such as Siri or Alexa), self-driving cars and in retail applications that recommend products similar to those you have purchased in the past. AI tries to mimic human thinking to solve problems and perform tasks that normally require human intelligence. Consider a user who interacts with ChatGPT. The user enters a text prompt and gets a result. But what happens in between? Between the prompt and the result the user receives is matha lot of math. Mass quantities of data are fed into computationally expensive algorithms
 

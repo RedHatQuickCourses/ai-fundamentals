@@ -76,7 +76,7 @@ Source: Harvard Business Review (https://hbr.org/2024/01/getting-machine-learnin
 
 === Reducing package theft
 
-image::stock-image.jpg[UPS uses predictive AI to combat package theft.Package theft has increasingly become a problem. According to Capital One Shopping (https://capitaloneshopping.com/research/package-theft-statistics::textNationwide20Package20Theft20StatisticstextOver20352520of20Americans20had,totaled20241.0920billion20in202023.), there were 119 million packages stolen in the U.S. throughout 2023, and Americans lost an estimated 13.4 billion to package theft that year.]
+image::stock-image-predictive-1.jpg[UPS uses predictive AI to combat package theft.Package theft has increasingly become a problem. According to Capital One Shopping (https://capitaloneshopping.com/research/package-theft-statistics::textNationwide20Package20Theft20StatisticstextOver20352520of20Americans20had,totaled20241.0920billion20in202023.), there were 119 million packages stolen in the U.S. throughout 2023, and Americans lost an estimated 13.4 billion to package theft that year.]
 
 With predictive AI, UPS is able to predict the likelihood of a successful delivery based on such factors as location, loss frequency, returns volume, and number of delivery attempts The AI groups these factors and can assign a score to a delivery address that reflects the likelihood of successful delivery.
 
@@ -96,13 +96,13 @@ image::Bank%20vault.jpg[Banks and other financial institutions routinely use pre
 
 === Identifying fraud and other financial crimes
 
-image::stock-image.jpg[According to the United Nations (https://www.unodc.org/unodc/en/money-laundering/overview.html::textMoney20laundering20is20a20processthe20trail20to20foil20pursuit)), up to 2 trillion a year is 'laundered' by criminals attempting to obscure the illegal sources of their money. As one of the world's largest banks HSBC uses predictive AI to help it screen an average of more than 1.2 billion transactions per month for evidence of money laundering, fraud, and other financial crime.]
+image::stock-image-predictive-2.jpg[According to the United Nations (https://www.unodc.org/unodc/en/money-laundering/overview.html::textMoney20laundering20is20a20processthe20trail20to20foil20pursuit)), up to 2 trillion a year is 'laundered' by criminals attempting to obscure the illegal sources of their money. As one of the world's largest banks HSBC uses predictive AI to help it screen an average of more than 1.2 billion transactions per month for evidence of money laundering, fraud, and other financial crime.]
 
 Previously, HSBC employed a rulesbased system to review transactions for signs of money laundering, which involved setting parameters for transactions the bank's automated monitoring system should identify. Transactions tagged as suspicious were then investigated on a case-by-case basis however, this resulted in a great deal of false positives (i.e., legal transactions that still needed to be investigated by HSBC's human investigators.HSBC used its financial expertise to train its AI model to detect suspicious activity with more precision than its previous rulesbased system. This led to the following benefitsMore accurate risk detection: The new AI system reduced the overall number of alerts by 60 while correctly identifying two to four times as much suspicious activity as the previous system.Reduced investigation time: Fewer alerts meant investigators spent less time reviewing clean transactions As a result, HSBC was able to decrease the time it takes from first alert to detect a suspicious account.Better success in identifying criminal networks HSBC's new system is better than the previous system at identifying networks of criminals working together to try and launder money.Improved customer satisfaction: Fewer false positives meant the bank spent less time contacting legitimate, law-abiding customers and taking up their time with, ultimately, unnecessary transaction reviews
 
 === Providing AI-enhanced accounts in mobile apps
 
-image::stock-image.jpg[Through its mobile banking app, Wells Fargo uses predictive AI to offer its customers 'predictive banking.']
+image::stock-image-predictive-3.jpg[Through its mobile banking app, Wells Fargo uses predictive AI to offer its customers 'predictive banking.']
 
 With predictive AI, Wells Fargo analyzes customerss account information to provide tailored guidance and tips for better financial decision-making.For example, the feature flags higher-than-normal automatic monthly payments and offers reminders to prompt customers to transfer money from one account to another to avoid a possible upcoming overdraft. If a customer seems to have more money than usual in a particular month, they may be prompted to transfer money into savings
 
@@ -161,7 +161,7 @@ Chatbots offer users the following benefitsFast generation of text-based content
 
 === Enhancing sporting events
 
-image::stock-image.jpg[At the Wimbledon Tennis Championships IBM uses generative AI to enhance the fan experience for online, application, and TV users and as well as assess player performance.]
+image::stock-image-predictive-4.jpg[At the Wimbledon Tennis Championships IBM uses generative AI to enhance the fan experience for online, application, and TV users and as well as assess player performance.]
 
 IBM uses generative AI in the form of its Watson X platform and a Wimbledon-specific AI model to process more than 2.5 million data points during the tournament to deliver real-time data insights which are fed to producers and commentators providing the TV coverage, enhancing the viewing experience. The model can generate tennisspecific content such as player profiles which are shared with fans to improve their experience. IBM also uses its AI to create highlight reels as well as the commentary for those highlights which also serves to enhance the fan experience. The AI is capable of grasping nuances such as drop shots and other player tactics which provides players and their coaches with valuable insights IBM's generative AI can also assess playerss chances of winning and even provide suggestions for refining their play strategies
 

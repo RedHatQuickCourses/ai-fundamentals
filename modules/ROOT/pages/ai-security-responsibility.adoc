@@ -19,7 +19,7 @@ Artificial intelligence (AI) brings enormous opportunities but also unique risks
 
 === AI security vs AI safety
 
-image::stock-image.jpg[AI security and AI safety are related but distinct concepts Although it's necessary to consider and employ both to reduce risk, they address different challenges]
+image::stock-image-security-1.jpg[AI security and AI safety are related but distinct concepts Although it's necessary to consider and employ both to reduce risk, they address different challenges]
 
 === AI security
 
@@ -56,7 +56,7 @@ This strategy involves mapping potential vulnerabilities and opportunities for t
 
 === AI security best practices
 
-image::stock-image.jpg[Every phase of the AI lifecycle has vulnerabilities that need protection. Fortunately, there are practices in which organizations can engage to help mitigate such vulnerabilities]
+image::stock-image-security-2.jpg[Every phase of the AI lifecycle has vulnerabilities that need protection. Fortunately, there are practices in which organizations can engage to help mitigate such vulnerabilities]
 
 Elements of a healthy AI security strategy that can help protect an organization' AI models data, and privacy include the following best practices
 
