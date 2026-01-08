@@ -199,8 +199,7 @@ Here are the takeaways from this lesson:
 === Knowledge check
 
 [.knowledge-check]
-[source,html]
-----
+++++
 <div class="knowledge-check" data-question="True or false: An agentic workflow is a structured series of actions managed and completed by AI agents" data-correct="A" data-correct-feedback="True. Generative AI involves the use of deep learning models"'''
 
 === 🧠 Knowledge Check: Which of the following statements most accurately describes a characteristic of agentic AI?
@@ -222,5 +221,5 @@ D. It requires a minimum of four AI agents working in concert.
   <button class="knowledge-check-submit">Check Answer</button>
   <div class="knowledge-check-feedback" style="display: none;"></div>
 </div>
-----
+++++
 

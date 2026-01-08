@@ -329,8 +329,7 @@ Here are the takeaways from this lesson:
 === Knowledge check
 
 [.knowledge-check]
-[source,html]
-----
+++++
 <div class="knowledge-check" data-question="Which of the following statements does NOT describe an example of predictive AI?" data-correct="B" data-correct-feedback="Correct! Although Amazon does use AI to generate summaries of customer reviews that is an example of generative AI, not predictive AI." data-incorrect-feedback="Incorrect. Please try again."">
   <div class="knowledge-check-question">
     <strong>Which of the following statements does NOT describe an example of predictive AI?</strong>
@@ -344,11 +343,10 @@ Here are the takeaways from this lesson:
   <button class="knowledge-check-submit">Check Answer</button>
   <div class="knowledge-check-feedback" style="display: none;"></div>
 </div>
-----
+++++
 
 [.knowledge-check]
-[source,html]
-----
+++++
 <div class="knowledge-check" data-question="Which statement regarding predictive AI is most accurate?" data-correct="D" data-correct-feedback="Correct! Banks use predictive AI to identify money laundering." data-incorrect-feedback="Incorrect. Please try again."">
   <div class="knowledge-check-question">
     <strong>Which statement regarding predictive AI is most accurate?</strong>
@@ -362,11 +360,10 @@ Here are the takeaways from this lesson:
   <button class="knowledge-check-submit">Check Answer</button>
   <div class="knowledge-check-feedback" style="display: none;"></div>
 </div>
-----
+++++
 
 [.knowledge-check]
-[source,html]
-----
+++++
 <div class="knowledge-check" data-question="Which of the following tools is most closely associated with the work data scientists perform?" data-correct="A" data-correct-feedback="Correct! Among the choices presented, Jupyter Notebooks are the most closely associated with the work that data scientists typically perform." data-incorrect-feedback="Incorrect. Please try again."">
   <div class="knowledge-check-question">
     <strong>Which of the following tools is most closely associated with the work data scientists perform?</strong>
@@ -380,11 +377,10 @@ Here are the takeaways from this lesson:
   <button class="knowledge-check-submit">Check Answer</button>
   <div class="knowledge-check-feedback" style="display: none;"></div>
 </div>
-----
+++++
 
 [.knowledge-check]
-[source,html]
-----
+++++
 <div class="knowledge-check" data-question="True or false: Generative AI involves the use of deep learning models" data-correct="A" data-correct-feedback="True. Generative AI involves the use of deep learning models"'''
 
 === 🧠 Knowledge Check: Which of the following statements regarding large language models (LLMs is most accurate?
@@ -406,5 +402,5 @@ D. Most LLMs are not trained on copyrighted material.
   <button class="knowledge-check-submit">Check Answer</button>
   <div class="knowledge-check-feedback" style="display: none;"></div>
 </div>
-----
+++++
 

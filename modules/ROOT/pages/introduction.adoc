@@ -128,8 +128,7 @@ Here are the takeaways from this lesson:
 === Knowledge check
 
 [.knowledge-check]
-[source,html]
-----
+++++
 <div class="knowledge-check" data-question="Which of the following statements best describes Moore's law?" data-correct="B" data-correct-feedback="Correct! Moore' law states that the number of transistors in an integrated circuit doubles approximately every two years" data-incorrect-feedback="Incorrect. Please try again."">
   <div class="knowledge-check-question">
     <strong>Which of the following statements best describes Moore's law?</strong>
@@ -143,11 +142,10 @@ Here are the takeaways from this lesson:
   <button class="knowledge-check-submit">Check Answer</button>
   <div class="knowledge-check-feedback" style="display: none;"></div>
 </div>
-----
+++++
 
 [.knowledge-check]
-[source,html]
-----
+++++
 <div class="knowledge-check" data-question="Which of the following statements is most accurate?" data-correct="D" data-correct-feedback="Correct!" data-incorrect-feedback="Incorrect. Please try again."">
   <div class="knowledge-check-question">
     <strong>Which of the following statements is most accurate?</strong>
@@ -161,5 +159,5 @@ Here are the takeaways from this lesson:
   <button class="knowledge-check-submit">Check Answer</button>
   <div class="knowledge-check-feedback" style="display: none;"></div>
 </div>
-----
+++++
 
