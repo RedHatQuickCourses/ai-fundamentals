@@ -3,8 +3,6 @@
 
 == Introduction
 
-Course Title: AI Fundamentals
-
 This course introduces artificial intelligence (AI) and explains why you should care about it. You'll learn about the AI market opportunity, different types of AI (predictive, generative, and agentic), inferencing and optimization, and how to use AI responsibly.
 
 Duration: Approximately 1 hour
