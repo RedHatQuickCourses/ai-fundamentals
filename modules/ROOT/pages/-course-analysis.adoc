@@ -1,0 +1,92 @@
+= 📊 Course Analysis
+:navtitle: 📊 Course Analysis
+
+=== 📂 How to Access Course Assets
+
+*To access the images and files listed below:*
+1. Open the original SCORM zip file
+2. Navigate to the `scormcontent` folder
+3. Open the `assets` folder
+4. All images, PDFs, and media files should be located in this folder
+
+*Note:* Some files may be in subfolders within the assets directory. Use the file paths shown in the inventory below to locate specific files.
+
+=== 📁 Asset Inventory
+*Total Assets:* 47 files (4.78 MB)
+
+*PDF Files (3):* 1076.2 KB
+- scormcontent/assets/AI Fundamentals Key Terms.pdf (626.7 KB)
+- scormcontent/assets/AI Timeline .pdf (372.8 KB)
+- scormcontent/assets/AI Fundamentals_ Key Takeaways__.pdf (76.7 KB)
+
+*JPG Files (31):* 3427.7 KB
+- scormcontent/assets/S-oN69/stock-image.jpg (453.4 KB)
+- scormcontent/assets/79AzwS/stock-image.jpg (204.0 KB)
+- scormcontent/assets/Uettbr/stock-image.jpg (192.1 KB)
+- scormcontent/assets/stock-image.jpg (184.6 KB)
+- scormcontent/assets/Va3Gu4/stock-image.jpg (177.3 KB)
+- scormcontent/assets/netflix-movie-may-2024-1714581478969.jpg (161.1 KB)
+- scormcontent/assets/vE2HZM/mountains.jpg (156.4 KB)
+- scormcontent/assets/MTPS-b/stock-image.jpg (151.7 KB)
+- scormcontent/assets/nmmmtB/stock-image.jpg (140.6 KB)
+- scormcontent/assets/_nM_yG/stock-image.jpg (129.9 KB)
+- scormcontent/assets/4P7kBG/stock-image.jpg (129.9 KB)
+- scormcontent/assets/AmazonCustomerReviewSummary.jpg (111.1 KB)
+- scormcontent/assets/ImageOptimization.jpg (110.3 KB)
+- scormcontent/assets/AgenticAI_3.jpg (106.1 KB)
+- scormcontent/assets/TheBalancingActOfUsingFoundationModels.jpg (102.3 KB)
+- scormcontent/assets/WhatIsAI_1a.jpg (98.4 KB)
+- scormcontent/assets/AmazonRecs1a.jpg (93.0 KB)
+- scormcontent/assets/ModelContextProtocol.jpg (92.2 KB)
+- scormcontent/assets/WhatIsDeepLearning1a.jpg (90.7 KB)
+- scormcontent/assets/AgenticAI_2.jpg (88.3 KB)
+- scormcontent/assets/GoogleAIOverview.jpg (87.7 KB)
+- scormcontent/assets/KfrlT7/stock-image.jpg (62.2 KB)
+- scormcontent/assets/ReqsOfEnterpriseAIProductionSystems1.jpg (51.0 KB)
+- scormcontent/assets/AgenticAI_1.jpg (46.0 KB)
+- scormcontent/assets/By2029AgenticAI.jpg (44.7 KB)
+- scormcontent/assets/Bank vault.jpg (36.5 KB)
+- scormcontent/assets/jdWXSw/stock-image.jpg (36.2 KB)
+- scormcontent/assets/UPSTruck.jpg (31.2 KB)
+- scormcontent/assets/LEDbulb1.jpg (24.2 KB)
+- scormcontent/assets/ChatGPT_3_5b.jpg (21.1 KB)
+- scormcontent/assets/ChatGPT_3_5.jpg (13.5 KB)
+
+*PNG Files (13):* 390.7 KB
+- scormcontent/assets/AI_Agents_Integrate.png (55.2 KB)
+- scormcontent/assets/ValueOfVLLM.png (52.4 KB)
+- scormcontent/assets/WhatisML1a.png (51.0 KB)
+- scormcontent/assets/GenerativeAI_2025.png (41.3 KB)
+- scormcontent/assets/TextMessagePredictiveTexting.png (38.8 KB)
+- scormcontent/assets/WhatIsInferencing.png (38.7 KB)
+- scormcontent/assets/GoogleSearchBox.png (30.9 KB)
+- scormcontent/assets/PredictiveAI_2025.png (28.7 KB)
+- scormcontent/assets/KzeKOyXqF8Z-oBfd.png (21.8 KB)
+- scormcontent/assets/vg-LNxOtAfx8aY_U.png (18.6 KB)
+- scormcontent/assets/ChatGPT_logo.png (6.3 KB)
+- scormcontent/assets/vLLM_Logo.png (3.8 KB)
+- scormcontent/assets/tAU59QO0XmNElM9o.png (3.2 KB)
+
+=== 📈 Content Type Breakdown
+*Total Content Items:* 308
+*Text Content:* 181 (58.8%)
+*Video Content:* 0 (0.0%)
+*Audio Content:* 0 (0.0%)
+*Image Content:* 44 (14.3%)
+*Interactive Content:* 10 (3.2%)
+*Quiz/Assessment:* 11 (3.6%)
+*Other Content:* 106 (34.4%)
+
+=== ⏱️ Estimated Duration
+*Estimated Total Duration:* 0h 60m
+*Breakdown:*
+- Text Content: 52.5 minutes (7868 words)
+- Video Content: 7.5 minutes
+- Audio Content: 0.0 minutes
+
+*Per Lesson Breakdown:*
+- *Introduction:* 9.8m (Text: 9.8m, Video: 0.0m, Audio: 0.0m)
+- *Predictive AI and Generative AI:* 21.0m (Text: 21.0m, Video: 0.0m, Audio: 0.0m)
+- *Inferencing and Optimization:* 7.6m (Text: 7.6m, Video: 0.0m, Audio: 0.0m)
+- *Agentic AI:* 10.8m (Text: 10.8m, Video: 0.0m, Audio: 0.0m)
+- *AI Security and Using AI Responsibly :* 10.8m (Text: 3.3m, Video: 7.5m, Audio: 0.0m)

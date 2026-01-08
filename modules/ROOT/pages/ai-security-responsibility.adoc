@@ -1,0 +1,149 @@
+= AI Security and Using AI Responsibly 
+:navtitle: AI Security and Using AI Responsibly 
+
+=== Lesson overview
+
+Artificial intelligence (AI) brings enormous opportunities but also unique risks As AI adoption scales up, it increases risks for enterprises and individuals This lesson takes a high-level look at AI security and provides guidance on using AI responsibly.
+
+=== Lesson objectives
+
+* Define AI security and AI safety.
+
+* Describe examples of risks related to AI security and AI safety.
+
+* Explain, at a high level, steps organizations can take to mitigate risks related to AI security and AI safety
+
+* Summarize actions users can take to use AI safely and responsibly.
+
+'''
+
+=== AI security vs AI safety
+
+image::stock-image.jpg[AI security and AI safety are related but distinct concepts Although it's necessary to consider and employ both to reduce risk, they address different challenges]
+
+=== AI security
+
+AI security focuses on protecting the confidentiality, integrity, and availability of AI systems The goal is to prevent malicious actors from attacking or manipulating those systems AI security involves protecting against threats that can arise from:Exploitation of vulnerabilities in software componentsMisconfigured systems or broken authentication allowing unauthorized access to sensitive enterprise data.Prompt injection (a type of security vulnerability or attack in which a user attempts to hijack or manipulate the AI model' instructions by sneaking in unauthorized or malicious commands within their input, that is the prompt).Model 'jailbreaking' (bypassing safety guardrails for example, ethical, legal, or content policies to generate restricted, harmful, or prohibited content).
+
+=== AI safety
+
+In AI contexts safety means trustworthiness fairness and ethical alignment. AI safety helps maintain the intended behavior of AI systems keeping them aligned with company policies regulations and ethical standards The risks surrounding AI safety are less about system compromise and more related to what an AI system produces Issues related to AI safety include:Harmful or toxic language (for example, an AI model' responses could contain offensive or abusive content).Bias or discrimination in responsesHallucinations (plausible-sounding but false answers.Dangerous or misleading recommendations (for example, suggesting that users put glue on pizza or swallow drain cleaner to treat a sore throat).
+
+'''
+
+=== Detecting AI security threats
+
+Organizations looking to protect their team and technology often layer their strategiesa single line of defense likely won't cut it. Common tactics include the following:
+
+=== Interactive Accordion
+
+*Behavioral analysis*
+This type of threat detection can catch anomalies and deviations within a network. After tracking typical datasets patterns and activity, it becomes intimately familiar with the AI system's typical behavior. When it comes across atypical behavior, such as biased contentor worse, public-facing passwords in cleartext formatit triggers an alert.
+
+*Runtime threat detection*
+If an adversary is scanning an environment for possible exploitations existing runtime security can detect repeated probes and sound the alarm. Security teams can automate and enhance this technique with AI to recognize threats and trigger alerts sooner.
+
+*Predictive threat intelligence*
+This technology anticipates future events by referencing historical data to make predictions about what will happen next. For example, if an adversary were targeting fintech systems with ransomware, predictive threat intelligence would assess the organizational posture against the likelihood of a successful attack.
+
+*Enhanced data processing*
+AI workloads contain a lot of datatypically, billions and billions of data points AI security has to process that data in order to conclude whether it's at risk, confidential, or available. Enhanced data processing can detect anomalies and threats in the environment faster than humans or traditional processing technology, so teams can act quickly.
+
+*Attack path analysis*
+This strategy involves mapping potential vulnerabilities and opportunities for threats For example, understanding how a threat may enter an organization' systems and reach sensitive data helps security teams identify which path an attack would come from and block it.
+
+'''
+
+=== AI security best practices
+
+image::stock-image.jpg[Every phase of the AI lifecycle has vulnerabilities that need protection. Fortunately, there are practices in which organizations can engage to help mitigate such vulnerabilities]
+
+Elements of a healthy AI security strategy that can help protect an organization' AI models data, and privacy include the following best practices
+
+=== Interactive Accordion
+
+*Adopting AI guardrails*
+Guardrails help generative AI models filter hateful, abusive, or profane speech, personally identifiable information, competitive information, or other domain-specific constraints
+
+*Protecting training data*
+AI systems tend to be as reliable as the data they were trained on. Original training data should be secured behind firewalls or other safeguards against tampering or manipulation to protect the model's integrity and outputs
+
+*Implementing strong platform security*
+Protecting the platform on which AI workloads run can help ensure their health and reliability. If the platform is secure, threat actors have to work harder to inflict harm.
+
+*Focusing on supply chain and systems security*
+Organizations should adapt existing best practices in supply chain and systems security to cover AI workloads Just as traditional software supply chain security verifies the integrity of open source libraries AI supply chain security can account for the provenance and integrity of training data, pretrained models and third-party AI components
+
+*Customizing strategies*
+AI workloads are unique, rarely fitting into one-size-fitsall security solutions Security strategy should be tailored to an organization' individual AI workloads designs and data.
+
+'''
+
+=== Using AI responsibly
+
+So what can you as an individual user do to mitigate risks associated with AI security and safety? And how can you use AI responsibly?
+
+* Don'st enter confidential or sensitive information: In general, unless you know otherwise, treat an AI chat window as a public forum. Do not paste any code, internal documents customer names financial figures or unreleased product details into a public-facing LLM (such as free versions of ChatGPT).
+
+* Assume all input is training data: Always assume that any information you input might be used to train future versions of the model, making it discoverable by others Only use anonymized, aggregated, or public data.
+
+* Use approved, internal tools Where available, use company-licensed or approved AI tools that guarantee inputs are not used for training and have strict data retention policies If you'sre unsure, ask your IT department.
+
+* Review all AI-generated output: Although LLM responses to prompts are typically stated in a confident manner, do NOT assume AI-generated output is factual or accurate. AI models can hallucinate (generate false, plausible-sounding information). Always crossreference all facts figures quoted statements citation information, and so forth with verified, trusted internal or external sources In addition, LLMs can sometimes include copyrighted material verbatim in their responses and using such content without the permission of the respective copyright holder could result in copyright infringement.
+
+* Maintain professionalism: Do not engage in inappropriate, biased, or inflammatory conversations with an AI chatbot. Likewise, do not prompt the AI to discuss or comment on internal company politics rival companies unreleased products or sensitive client matters Assume your prompts and conversations could be audited or made public and have a negative impact on your reputation (and that of your employer) if you engage with AI in an unprofessional manner.
+
+* Limit personal sharing: Avoid disclosing any private or sensitive personal details (e.g., home address personal schedules family names to public AI tools as this information can be harvested and used for targeted attacks against you or your colleagues
+
+* Be vigilant regarding social engineering attempts Malicious actors may use AI to craft highly convincing phishing emails deepfake voicemails or seemingly legitimate documents It' not enough anymore to look for poorly constructed or written emails Take care before clicking links especially in emails or messages you were not expecting.
+
+* Be skeptical toward any advice an AI may provide: If an AI offers advice on specialized areas (e.g., legal, medical, or financial), keep in mind that AI is no substitute for a licensed professional. Always consult a human expert in these domains
+
+* Be transparent: If you'sve used AI to generate content (e.g., code, text, images or videos, be clear about that with your audience. Include disclaimers or statements regarding AI use to clarify how you used AI and to what degree you used it.
+
+'''
+
+=== Thinking about your AI conversation
+
+Of course, there's no way to prepare you for every possible AI-related conversation you might have. As always do your best to know your audience and tailor your conversation to their interests needs and expertise. Be ready to adapt if the conversation shifts and keep in mind that conversations involve two-way communication.
+
+'''
+
+=== Takeaways
+
+Here are the takeaways from this lesson:
+
+* AI security and AI safety are related but distinct concepts
+
+* AI security focuses on protecting the confidentiality, integrity, and availability of AI systems The goal is to prevent malicious actors from attacking or manipulating those systems
+
+* In AI contexts safety means trustworthiness fairness and ethical alignment. AI safety helps maintain the intended behavior of AI systems keeping them aligned with company policies regulations and ethical standards
+
+* Common tactics for detecting AI security threats include behavioral analysis runtime threat detection, predictive threat analysis and enhanced data processing.
+
+* AI security best practices include adopting AI guardrails protecting training data, implementing strong platform security, focusing on supply chain and systems security, and customizing strategies to an organization' individual AI workloads designs and data.
+
+* Some tips for using AI responsibly include avoiding sharing sensitive or confidential information with public chatbots assuming any data shared with such a public LLM may be used to train that LLM, using IT-approved AI tools maintaining professionalism when using AI tools and being transparent with your audience in how you'sve used AI.
+
+'''
+
+=== Congratulations
+
+You have completed the AI Fundamentals course!
+
+If you are interested in more information about AI, check out the following resourcesA PDF compilation of key takeaways from each lesson in this course that you can download and consult as necessary.
+
+=== 📱 Media: Media Content
+
+An interactive PDF containing key terms related to AI, including links to videos containing more information.
+
+=== 📱 Media: Media Content
+
+An abbreviated AI timeline containing major landmarks in the history and development of AI.
+
+=== 📱 Media: Media Content
+
+'''
+
+'''
+

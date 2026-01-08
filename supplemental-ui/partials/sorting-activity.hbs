@@ -1,0 +1,137 @@
+<div class="sorting-activity" data-activity-id="{{activityId}}">
+  <div class="sorting-instructions">
+    <strong>{{instructions}}</strong>
+  </div>
+  <div class="sorting-items-container">
+    <div class="sorting-source">
+      <h4>Items to Sort</h4>
+      <div class="sortable-items" id="source-{{activityId}}">
+        {{#each items}}
+        <div class="sortable-item" data-value="{{value}}" draggable="true">{{label}}</div>
+        {{/each}}
+      </div>
+    </div>
+    <div class="sorting-target">
+      <h4>Sorted Items</h4>
+      <div class="sortable-items" id="target-{{activityId}}" ondrop="drop(event, '{{activityId}}')" ondragover="allowDrop(event)"></div>
+    </div>
+  </div>
+  <button class="sorting-check" onclick="checkSorting('{{activityId}}', [{{#each correctOrder}}'{{this}}'{{#unless @last}},{{/unless}}{{/each}}])">Check Order</button>
+  <div class="sorting-feedback" id="feedback-{{activityId}}" style="display: none;"></div>
+</div>
+
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.dataset.value);
+  ev.target.style.opacity = "0.5";
+}
+
+function drop(ev, activityId) {
+  ev.preventDefault();
+  const data = ev.dataTransfer.getData("text");
+  const item = document.querySelector(`[data-value="${data}"]`);
+  const target = document.getElementById(`target-${activityId}`);
+  
+  if (item && target) {
+    const clone = item.cloneNode(true);
+    clone.style.opacity = "1";
+    clone.draggable = true;
+    clone.ondragstart = function(e) { drag(e); };
+    target.appendChild(clone);
+    item.remove();
+  }
+}
+
+function checkSorting(activityId, correctOrder) {
+  const target = document.getElementById(`target-${activityId}`);
+  const items = Array.from(target.querySelectorAll('.sortable-item'));
+  const currentOrder = items.map(item => item.dataset.value);
+  const isCorrect = JSON.stringify(currentOrder) === JSON.stringify(correctOrder);
+  const feedback = document.getElementById(`feedback-${activityId}`);
+  
+  feedback.textContent = isCorrect 
+    ? '✓ Correct! Items are in the right order.'
+    : '✗ Incorrect. Please try again.';
+  feedback.className = 'sorting-feedback ' + (isCorrect ? 'correct' : 'incorrect');
+  feedback.style.display = 'block';
+}
+
+// Initialize drag events
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.sortable-item').forEach(item => {
+    item.ondragstart = function(e) { drag(e); };
+  });
+});
+</script>
+
+<style>
+.sorting-activity {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  background-color: #f9f9f9;
+}
+
+.sorting-instructions {
+  margin-bottom: 1rem;
+}
+
+.sorting-items-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.sortable-items {
+  min-height: 200px;
+  border: 2px dashed #ccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+  background-color: white;
+}
+
+.sortable-item {
+  padding: 0.5rem;
+  margin: 0.25rem 0;
+  background-color: #e8e8e8;
+  border-radius: 4px;
+  cursor: move;
+  user-select: none;
+}
+
+.sortable-item:hover {
+  background-color: #d0d0d0;
+}
+
+.sorting-check {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.sorting-feedback {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 4px;
+}
+
+.sorting-feedback.correct {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.sorting-feedback.incorrect {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+</style>

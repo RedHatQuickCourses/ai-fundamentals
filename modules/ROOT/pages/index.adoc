@@ -1,0 +1,40 @@
+= AI Fundamentals
+:navtitle: Home
+
+== Introduction
+
+Course Title: AI Fundamentals
+
+Description:
+This course introduces artificial intelligence (AI) and explains why you should care about it. You'll learn about the AI market opportunity, different types of AI (predictive, generative, and agentic), inferencing and optimization, and how to use AI responsibly.
+
+Duration: Approximately 1 hour
+
+== Objectives
+
+On completing this course, you should be able to:
+
+* Explain, at a high level, the AI market opportunity
+* Define artificial intelligence, machine learning, and deep learning
+* Distinguish between predictive AI and generative AI
+* Understand the importance of inferencing and optimization in AI
+* Describe agentic AI and its use cases
+* Identify AI security concerns and best practices for responsible AI use
+
+== Prerequisites
+
+This course assumes that you have:
+
+* Basic computer literacy
+* An interest in learning about artificial intelligence
+* No prior technical knowledge of AI required
+
+== Course Structure
+
+The course is organized into the following lessons:
+
+* xref:introduction.adoc[Introduction]
+* xref:predictive-generative-ai.adoc[Predictive AI and Generative AI]
+* xref:inferencing-optimization.adoc[Inferencing and Optimization]
+* xref:agentic-ai.adoc[Agentic AI]
+* xref:ai-security-responsibility.adoc[AI Security and Using AI Responsibly]

@@ -1,0 +1,226 @@
+= Agentic AI
+:navtitle: Agentic AI
+
+=== Lesson overview
+
+In a previous lesson, you learned about predictive AI and generative AI. This lesson concerns agentic AI, a comparatively new form of AI in which some of the most compelling and transforming aspects of AI are being realized.
+
+=== Lesson objectives
+
+* Define agentic AI.
+
+* Describe examples of agentic AI.
+
+* Explain the difference between agentic AI and generative AI.
+
+* Describe, at a high level, how Model Context Protocol (MCP) works and how it relates to agentic AI.
+
+'''
+
+=== What is agentic AI?
+
+Agentic AI is an AI system designed to interact with data and tools in a way that requires minimal human intervention. With an emphasis on goal-oriented behavior, agentic AI can accomplish tasks by creating a list of steps and performing them autonomously.Unlike traditional AI models which operate within predefined constraints and require a greater degree of human intervention, agentic AI exhibits autonomy, goal-driven behavior, and adaptability. The term agentic refers to these modelsss agency, or, their capacity to act independently and purposefully.
+
+While AI has already redefined how we interact with data, automate tasks and serve customers the next phase in AI is emerging, pushing beyond content generation and predictive analytics
+
+Think of agentic AI as a way of combining automation with the creative abilities of an LLM. To bring agentic AI to practice, you create a system that provides an LLM with access to external tools and algorithms that supply instructions for how the AI agents should use those toolsThe way agents communicate with tools involves orchestration, with flows or graphs depending on the framework being used. This approach allows the LLM to 'reason' and determine the best way to answer a questionsuch as deciding whether the query can be answered with available information or whether an external search is necessary.
+
+'''
+
+=== What is an AI agent?
+
+Think of an AI agent as an entity that sits on top of other software tools and operates them. Agentic AI can be a physical structure, a software program, or a combination of the two.
+
+image::AI_Agents_Integrate.png[Title AI agents integrate models functions and tools Subtitle Gen AI models predictive AI models code functions search, and more Diagram, left to right, depicts a User, an AI agent, and three vertically stacked items 1 LLM, 2 Code executor, and 3 Data, document, or web Under User, there is the following text 'sComplex task' under AI agent, there is the following text 'sNLP to understand prompt, generate task list, and execute's There is an arrow labelled 'sPrompt's going from User to AI agent, and an arrow labelled 'sResponse's going from AI agent to User. From AI agent to 1 LLM there is an arrow labelled 'sNLP Query's and from 1 LLM to AI agent, there is an arrow labelled 'sModel response's From AI agent to 2 Code executor, there is an arrow labelled 'sCode's and from 2 Code executor to AI agent, there is an arrow labelled 'sExecution response's From AI agent to 3 Data, document, or web, there' an arrow labelled 'sNLP/SQL query's and from 3 Data, document, or web, there' an arrow labelled 'sResponse's]
+
+An AI agent in a robotic system might use cameras sensors and monitors to collect data about its environment, then run that information alongside software to make determinations about its next step. This is a process known as sensor fusion. Meanwhile, agentic AI in a software setting would collect data from other sources such as APIs online searches text prompts and databases that help the agents create a sense of perception and context.
+
+'''
+
+=== What can agentic AI do?
+
+Generative AI applications have evolved rapidly over the last few years moving from simple use cases like text generation to more complex, multi-step workflows
+
+image::AgenticAI_1.jpg[Infographic builds across a series of images This is image 1 (of 3) Title Agentic AI Subtitle From passive tools to active decision makers 'sLevel 0, Repetitive tasks Follows simple predefined rules Use cases Chatbots for FAQs Level 1, Information Retrieval Agent, Retrieves data and recommends context-aware actions Use Cases Pulls from a knowledge base to recommend next steps for a support ticket]
+
+image::AgenticAI_2.jpg[Infographic builds across a series of images this is image 2 (of 3). It adds Levels 2 and 3 to the infographic. Level 2, Task Orchestration Agents Agents autonomously orchestrate low complexity tasks in a single data environment, can autonomously execute tasks Use Cases Schedules meetings and sends follow-up emails within a calendar/email system; Level 3, Muti-Domain Orchestration, Orchestrates workflows by connecting and harmonizing data across multiple business domains (ex. CRM or Finance), Use Cases Manages a sales pipeline using harmonized data from CRM, service tickets and financial reports]
+
+image::AgenticAI_3.jpg[Infographic builds across a series of images This is the third image (of 3) and adds Level 4 for the final piece of the graphic. Level 4, Multi-Agent Systems A system of specialized agents collaborate in real-time to manage complex, crossdomain processes Use Cases Specialized agents collaborate to process orders update inventory, and route customer feedback]
+
+'''
+
+=== Interactive Accordion
+
+*Agentic AI is adaptive and dynamic.*
+Agentic AI learns from previous patterns and data. This means that it can change its strategy based on new or changing information it receives in real time. While traditional workflows only move forward, agentic workflows can move forward and backward, with the ability to backtrack and mend errors as it goes In other words agentic AI can proactively anticipate needs and reflect on its own work.For example, an autonomous vehicle may use agentic AI to improve its ability to sense the difference between a piece of trash on the road and a squirrel. As it continuously monitors and analyzes its own behavior, it can improve the outcome of its actions
+
+*Agentic AI can independently manage and complete tasks*
+Agentic AI is sometimes referred to as autonomous AI. This is because it has the capability to communicate and collaborate with other AI systems and digital infrastructures on behalf of a human user, or another AI agent.For example, you can tell an AI agent that you want to make spaghetti for dinner. The AI agent could then complete the steps necessary to find a recipe, make a list of ingredients and place an order for those ingredients to be delivered to your home from a local grocery store.
+
+*Agentic AI has a 'chaining' ability.*
+The AI system can perform a sequence of actions in response to a single request. For example, if you ask an AI agent to 'create a website,' it can perform all the steps needed to carry out that task. This means that from one prompt, the AI agent can carry out the tasks of writing the code for the structure, populating the pages with content, designing the visuals and testing for responsiveness
+
+image::By2029AgenticAI.jpg['sBy 2029, agentic AI will autonomously resolve 80% of common customer service issues without human intervention, leading to a 30 reduction in operational costs's]
+
+'''
+
+=== What is an agentic workflow?
+
+Agentic AI brings us closer to creating intelligent systems that can operate independently, collaborate effectively, and learn from their interactions with data. Agentic AI works because of a process known as an agentic workflow.
+
+An agentic workflow is a structured series of actions managed and completed by AI agents
+
+When an AI agent is given a goal to complete, it begins the workflow by breaking down a task into smaller individual steps then performing those stepsTo carry out this series of steps an AI agent spins up more versions of itself, creating a multi-agent system (MAS). In this workflow, the main agent (also known as a meta agent, orchestrator, or supervisor) delegates tasks to other agents assigning values and interacting with memory in a feedback loop. Together, the committee of agents work in parallel until the overall goal is complete.Within this MAS, each agent is made up of an internal structure that allows it to function both independently and collaboratively within its system. This collaboration is dependent on shared memory stores which provide context regarding individual knowledge, past experiences and belief states
+
+'''
+
+=== Benefits of agentic AI
+
+Agentic AI is most useful for tasks that require continuous monitoring or rapid decision making. The benefits of agentic AI include:
+
+Click each of the following flash cards to read more about each benefit of agentic AI.
+
+=== 🃏 Flashcards: Interactive Flashcards
+
+*Flashcard Set (3 cards):*
+
+*Card 1:*
+*Front:* More productivity
+[Image: mountains.jpg]
+*Back:* Delegating tasks to an AI agent allows for more focus to be placed on initiatives that add value to an organization. Think of it as an intern that works 24 hours a day, 7 days a week.
+[Image: mountains.jpg]
+
+'''
+
+*Card 2:*
+*Front:* Reduced cost
+[Image: mountains.jpg]
+*Back:* Agentic AI reduces human error, taking away the cost associated with inefficiencies oversights and mistakes
+[Image: mountains.jpg]
+
+'''
+
+*Card 3:*
+*Front:* Informed decision making
+[Image: mountains.jpg]
+*Back:* Agentic AI uses ML to filter and process massive amounts of real-time data. Insights from larger pools of good data result in better predictions and strategies
+[Image: mountains.jpg]
+
+'''
+
+=== Agentic AI use cases
+
+Agentic AI can be used for many purposes Let's take a look at how agentic AI may be used in an industry setting:Business operations could use an AI agent to manage supply chains optimize inventory levels forecast demands and plan logisticsHealthcare fields could use an AI agent to engage with clients monitor needs carry out treatment plans and provide personalized support.Software development could grow more efficient from using agentic AI to automatically generate debugging code, manage development lifecycle, and design system architecture.Software operations could use agentic AI for the autonomous operations of networks and other IT infrastructure or servicesCybersecurity could benefit from an AI agent helping to monitor network traffic, detect issues and respond to threats in real time.Researchers could use agentic AI to design and run experiments analyze data, formulate new hypotheses and generally speed up the pace of innovation by operating faster than a single human (or group of researchers ever could.Finance and trade could be enhanced by agentic AI's ability to constantly analyze market trends make trading decisions and adjust strategy based on streams of real-time data it has access to.
+
+'''
+
+=== Agentic AI vs generative AI
+
+Both agentic AI and generative AI offer productivity benefits by assisting, augmenting, and optimizing tasks and processes Both are forms of AI that use LLMsWhen comparing the two, think of agentic AI as proactive and generative AI as reactive.Agentic AI is a system that can proactively set and complete goals with minimal human oversight. If part of accomplishing that goal involves creating content, generative AI tools handle that task. Agentic AI becomes an agent of the user and/or system.Generative AI is a tool that creates new content in reaction to a prompt. It can be a component of an agentic system, but it doesn't act on its own to complete a task. It has no agency.Agentic AI and generative AI do work collaboratively. Agentic AI systems may use generative AI to converse with a user, independently create content as part of a greater goal, or communicate with external tools generative AI is a critical part of agentic AI's 'cognitive' process Both types of AI are adaptable in their own way. Generative AI expresses its adaptability by producing content in many styles and for different contexts Agentic AI showcases its adaptability by adjusting its plan and strategy in response to changing environmental conditions or new information.
+
+'''
+
+=== Let' consider a hypothetical use case.
+
+Imagine a sales representative wants to use AI to write a follow-up email to a sales lead.With generative AI, the sales representative opens a generative AI interface and enters a prompt like, 'Write a polite and professional follow-up email to Maria Wang about our proposal.' The generative AI produces a draft of the email and has fulfilled its purpose. It's now up to the sales representative to copy that text, paste it into an email, enter the recipient's email address and hit send.Now let's explore how agentic AI would handle a similar task.Within an agentic system, the sales representative sets a rule or command in their customer relationship management (CRM) system. It might read something like, 'For any sales lead I mark as 'Follow-up required,' wait two business days then send a follow-up email.'Once the sales representative marks Maria Wang as 'Follow-up required,' the agentic workflow is triggered. The system has its instructions (the initial prompt) and independently lays out a plan to enact with the help of external tools The plan may look something like this
+
+=== 📋 Interactive Process
+
+*Introduction:* The agentic workflow
+Once the sales representative marks Maria Wang as 'Follow-up required,' the agentic workflow is triggered. The system has its instructions (the initial prompt) and independently lays out a plan to enact with the help of external tools The plan may look something like this
+
+*Summary:* The end
+Continue to the next topic.
+
+*Step 3:* Process Step
+After two business days the system sends a request to the agentic workflow.
+
+*Step 4:* Process Step
+The system retrieves Maria's details from the CRM.
+
+*Step 5:* Process Step
+Another tool fetches additional information about Maria (customer history, personalization details company information, etc.) that provides context for the prompt for the follow-up email.
+
+*Step 6:* Process Step
+The system creates a prompt for the follow-up email and provides it to an integrated gen AI model, which writes the email text.
+
+*Step 7:* Process Step
+The system provides a draft of the follow-up email to the sales representative, who approves the email or sends it back to redraft.
+
+*Step 8:* Process Step
+If the sales representative approves the email, the system makes an application programming interface (API) call to Maria's email service.
+
+*Step 9:* Process Step
+The system sends the email to Maria.
+
+*Step 10:* Process Step
+The system updates the CRM to show the email has been sent.
+
+'''
+
+=== What is Model Context Protocol (MCP)?
+
+Model Context Protocol (MCP) is an open source protocol, introduced by Anthropic, that enables two-way connection and standardized communication between AI applications and external services
+
+An open source protocol, or set of instructions is like a recipe for code that's freely available to use and contribute to.
+
+MCP defines how models can call external tools retrieve data, and interact with services to enhance their capabilities It provides a simplified and reliable way for AI systems to virtually 'plug in' to different data sources and tools Think of MCP as a USB-C cable that connects devices to accessories and allows for transmission of data.
+
+=== How does MCP communication work?
+
+image::ModelContextProtocol.jpg[Title Model Context Protocol (MCP) Subtitle The plug-and-play gateway to AI tools Left side of graphic consists of a diagram. A box labelled 'sMCP client's is on the far left. There are four arrows going from 'sMCP client's to 'sMCP serverss then there are four arrows running from each 'sMCP server's to 'sToolsdata's On the right side of the graphic is the following text: Open protocol that enables LLMs to use external tools and data, simplifying integration and expanding capabilities Simplified tooling: Allows AI systems to 'splug and play's with different tools without custom integrations Decoupled architecture: Separates the AI model from the specific tools it uses making the system more modular and easier to maintain Enhanced portability: Agents can run in any host environment that supports MCP and connect to any compliant server]
+
+MCP is based on the client-host-server model, also known as the client-server model, which includesMCP client: The AI application or system that requests access to external data or resourcesMCP host: The infrastructure (virtual machine, container, or serverless function) that manages communication between the client and server.MCP server: The component that provides specific tools resources and capabilities to the client.MCP begins with a handshake protocol. This initial greetingalso known as a capability discoveryconfirms that the MCP client and the MCP server can talk to each other.During the handshake protocol, the MCP client and the MCP server swap critical information to ensure they're compatible. The client shares which capabilities it has and which version of MCP it understands In return, the server shares which capabilities it supports and which tools and resources it can provide to the client.
+
+=== MCP and agentic AI
+
+MCP and agentic AI enable each other to create intelligent AI systems With MCP, AI systems can interact with the broader digital ecosystem to accomplish tasks for users Without MCP, agentic AI can think and plan (all the traits of generative AI), but can't interact with any outside systems
+
+Although rapid adoption of MCP by major industry players may make it seem as though it will become the standard for AI tool integration, it is not the only option. Examples of other protocols include LangChain Agent Protocol and Google' Agent2Agent (A2A).
+
+'''
+
+=== Takeaways
+
+Here are the takeaways from this lesson:
+
+* Agentic AI is an AI system designed to interact with data and tools in a way that requires minimal human intervention; agentic AI can accomplish tasks by creating a list of steps and performing them autonomously.
+
+* AI agent as an entity that sits on top of other software tools and operates them.
+
+* An agentic workflow is a structured series of actions managed and completed by AI agents
+
+* Think of agentic AI as proactive and generative AI as reactive.
+
+* Model Context Protocol (MCP) is an open source protocol, introduced by Anthropic, that enables two-way connection and standardized communication between AI applications and external services
+
+'''
+
+=== Knowledge check
+
+[.knowledge-check]
+[source,html]
+----
+<div class="knowledge-check" data-question="True or false: An agentic workflow is a structured series of actions managed and completed by AI agents" data-correct="A" data-correct-feedback="True. Generative AI involves the use of deep learning models"'''
+
+=== 🧠 Knowledge Check: Which of the following statements most accurately describes a characteristic of agentic AI?
+
+*Answer Options:*
+A. It can only follow simple, predefined rules
+B. It exhibits autonomy, goal-driven behavior, and adaptability. ✅
+C. It can predict the most likely of several potential outcomes but cannot generate new content.
+D. It requires a minimum of four AI agents working in concert.
+
+*✅ Correct Feedback:* Correct! Agentic AI exhibits autonomy, goal-driven behavior, and adaptability." data-incorrect-feedback="Incorrect. Please try again."">
+  <div class="knowledge-check-question">
+    <strong>True or false: An agentic workflow is a structured series of actions managed and completed by AI agents</strong>
+  </div>
+  <div class="knowledge-check-options">
+        <label class="knowledge-check-option"><input type="radio" name="kc-4972" value="A" /> <span>True</span></label>
+        <label class="knowledge-check-option"><input type="radio" name="kc-4972" value="B" /> <span>False</span></label>
+  </div>
+  <button class="knowledge-check-submit">Check Answer</button>
+  <div class="knowledge-check-feedback" style="display: none;"></div>
+</div>
+----
+

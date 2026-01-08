@@ -1,0 +1,198 @@
+<div class="flashcards-container" data-card-set="{{cardSetId}}">
+  <div class="flashcards-controls">
+    <button class="flashcard-nav prev" onclick="previousCard('{{cardSetId}}')">← Previous</button>
+    <span class="flashcard-counter">
+      <span id="current-{{cardSetId}}">1</span> / <span id="total-{{cardSetId}}">{{total}}</span>
+    </span>
+    <button class="flashcard-nav next" onclick="nextCard('{{cardSetId}}')">Next →</button>
+  </div>
+  <div class="flashcard" id="card-{{cardSetId}}" onclick="flipCard(this)">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <div class="flashcard-label">Question</div>
+        <div class="flashcard-content">{{currentQuestion}}</div>
+      </div>
+      <div class="flashcard-back">
+        <div class="flashcard-label">Answer</div>
+        <div class="flashcard-content">{{currentAnswer}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="flashcards-list">
+    {{#each cards}}
+    <button class="flashcard-thumb {{#if @first}}active{{/if}}" 
+            onclick="showCard('{{../cardSetId}}', {{@index}}, '{{question}}', '{{answer}}')">
+      Card {{@index}}
+    </button>
+    {{/each}}
+  </div>
+</div>
+
+<script>
+const cardData = {};
+
+function initFlashcards(cardSetId, cards) {
+  cardData[cardSetId] = {
+    cards: cards,
+    currentIndex: 0,
+    isFlipped: false
+  };
+  document.getElementById(`total-${cardSetId}`).textContent = cards.length;
+}
+
+function showCard(cardSetId, index, question, answer) {
+  const data = cardData[cardSetId];
+  if (!data) return;
+  
+  data.currentIndex = index;
+  data.isFlipped = false;
+  
+  const card = document.getElementById(`card-${cardSetId}`);
+  const cardInner = card.querySelector('.flashcard-inner');
+  cardInner.classList.remove('flipped');
+  
+  card.querySelector('.flashcard-front .flashcard-content').textContent = question;
+  card.querySelector('.flashcard-back .flashcard-content').textContent = answer;
+  document.getElementById(`current-${cardSetId}`).textContent = index + 1;
+  
+  // Update active thumb
+  document.querySelectorAll(`[data-card-set="${cardSetId}"] .flashcard-thumb`).forEach((thumb, i) => {
+    thumb.classList.toggle('active', i === index);
+  });
+}
+
+function flipCard(cardElement) {
+  const inner = cardElement.querySelector('.flashcard-inner');
+  inner.classList.toggle('flipped');
+}
+
+function nextCard(cardSetId) {
+  const data = cardData[cardSetId];
+  if (!data) return;
+  
+  const nextIndex = (data.currentIndex + 1) % data.cards.length;
+  const card = data.cards[nextIndex];
+  showCard(cardSetId, nextIndex, card.question, card.answer);
+}
+
+function previousCard(cardSetId) {
+  const data = cardData[cardSetId];
+  if (!data) return;
+  
+  const prevIndex = (data.currentIndex - 1 + data.cards.length) % data.cards.length;
+  const card = data.cards[prevIndex];
+  showCard(cardSetId, prevIndex, card.question, card.answer);
+}
+</script>
+
+<style>
+.flashcards-container {
+  margin: 1.5rem 0;
+  max-width: 600px;
+}
+
+.flashcards-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.flashcard-nav {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.flashcard-nav:hover {
+  background-color: #0052a3;
+}
+
+.flashcard-counter {
+  font-weight: 600;
+}
+
+.flashcard {
+  width: 100%;
+  height: 300px;
+  perspective: 1000px;
+  margin-bottom: 1rem;
+}
+
+.flashcard-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.flashcard-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.flashcard-front,
+.flashcard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.flashcard-back {
+  transform: rotateY(180deg);
+  background-color: #f0f0f0;
+}
+
+.flashcard-label {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.flashcard-content {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.flashcards-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.flashcard-thumb {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.flashcard-thumb:hover {
+  background-color: #e8e8e8;
+}
+
+.flashcard-thumb.active {
+  background-color: #0066cc;
+  color: white;
+  border-color: #0066cc;
+}
+</style>

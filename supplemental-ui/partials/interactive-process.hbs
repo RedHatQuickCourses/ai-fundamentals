@@ -1,0 +1,232 @@
+<div class="interactive-process" data-process-id="{{processId}}">
+  <div class="process-instructions">
+    <strong>{{instructions}}</strong>
+  </div>
+  <div class="process-steps">
+    {{#each steps}}
+    <div class="process-step {{#if @first}}active{{/if}}" data-step="{{@index}}">
+      <div class="step-number">{{@index}}</div>
+      <div class="step-content">
+        <h4>{{title}}</h4>
+        <p>{{description}}</p>
+        {{#if image}}
+        <img src="{{image}}" alt="{{title}}" class="step-image" />
+        {{/if}}
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  <div class="process-controls">
+    <button class="process-btn prev" onclick="previousStep('{{processId}}')" disabled>← Previous</button>
+    <button class="process-btn next" onclick="nextStep('{{processId}}')">Next →</button>
+    <button class="process-btn reset" onclick="resetProcess('{{processId}}')">Reset</button>
+  </div>
+  <div class="process-progress">
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress-{{processId}}" style="width: {{progress}}%"></div>
+    </div>
+    <span class="progress-text">Step <span id="current-step-{{processId}}">1</span> of <span id="total-steps-{{processId}}">{{totalSteps}}</span></span>
+  </div>
+</div>
+
+<script>
+const processData = {};
+
+function initProcess(processId, totalSteps) {
+  processData[processId] = {
+    currentStep: 0,
+    totalSteps: totalSteps
+  };
+  document.getElementById(`total-steps-${processId}`).textContent = totalSteps;
+  updateProcessUI(processId);
+}
+
+function nextStep(processId) {
+  const data = processData[processId];
+  if (data.currentStep < data.totalSteps - 1) {
+    data.currentStep++;
+    updateProcessUI(processId);
+  }
+}
+
+function previousStep(processId) {
+  const data = processData[processId];
+  if (data.currentStep > 0) {
+    data.currentStep--;
+    updateProcessUI(processId);
+  }
+}
+
+function resetProcess(processId) {
+  const data = processData[processId];
+  data.currentStep = 0;
+  updateProcessUI(processId);
+}
+
+function updateProcessUI(processId) {
+  const data = processData[processId];
+  const container = document.querySelector(`[data-process-id="${processId}"]`);
+  const steps = container.querySelectorAll('.process-step');
+  const prevBtn = container.querySelector('.process-btn.prev');
+  const nextBtn = container.querySelector('.process-btn.next');
+  const progressFill = document.getElementById(`progress-${processId}`);
+  const currentStepSpan = document.getElementById(`current-step-${processId}`);
+  
+  steps.forEach((step, index) => {
+    step.classList.toggle('active', index === data.currentStep);
+    step.classList.toggle('completed', index < data.currentStep);
+  });
+  
+  prevBtn.disabled = data.currentStep === 0;
+  nextBtn.disabled = data.currentStep === data.totalSteps - 1;
+  
+  const progress = ((data.currentStep + 1) / data.totalSteps) * 100;
+  progressFill.style.width = progress + '%';
+  currentStepSpan.textContent = data.currentStep + 1;
+}
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.interactive-process').forEach(container => {
+    const processId = container.dataset.processId;
+    const totalSteps = container.querySelectorAll('.process-step').length;
+    initProcess(processId, totalSteps);
+  });
+});
+</script>
+
+<style>
+.interactive-process {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  background-color: #f9f9f9;
+}
+
+.process-instructions {
+  margin-bottom: 1.5rem;
+  font-size: 1.1em;
+}
+
+.process-steps {
+  margin: 1.5rem 0;
+}
+
+.process-step {
+  display: none;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  border-left: 4px solid #ddd;
+}
+
+.process-step.active {
+  display: block;
+  border-left-color: #0066cc;
+}
+
+.process-step.completed {
+  opacity: 0.6;
+}
+
+.step-number {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #0066cc;
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  margin-right: 1rem;
+  vertical-align: top;
+}
+
+.step-content {
+  display: inline-block;
+  width: calc(100% - 50px);
+  vertical-align: top;
+}
+
+.step-content h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.step-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 4px;
+}
+
+.process-controls {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  justify-content: center;
+}
+
+.process-btn {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.process-btn.prev,
+.process-btn.next {
+  background-color: #0066cc;
+  color: white;
+}
+
+.process-btn.prev:hover,
+.process-btn.next:hover {
+  background-color: #0052a3;
+}
+
+.process-btn.prev:disabled,
+.process-btn.next:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.process-btn.reset {
+  background-color: #6c757d;
+  color: white;
+}
+
+.process-btn.reset:hover {
+  background-color: #5a6268;
+}
+
+.process-progress {
+  margin-top: 1.5rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #0066cc;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  text-align: center;
+  display: block;
+  color: #666;
+  font-size: 0.9em;
+}
+</style>

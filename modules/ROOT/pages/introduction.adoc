@@ -1,0 +1,165 @@
+= Introduction
+:navtitle: Introduction
+
+=== Lesson overview
+
+This lesson introduces artificial intelligence (AI) and explains why you should care about it.
+
+=== Lesson objectives
+
+In this lesson, you will learn how to:
+
+* Explain, at a high level, the AI market opportunity.
+
+* Define artificial intelligence, machine learning, and deep learning.
+
+'''
+
+=== Are you ready to talk about AI?
+
+image::stock-image.jpg[Suppose you were to find yourself in an informal conversation, and talk turns to artificial intelligence. Would you know enough to hold up your end of the conversation?]
+
+You need to be able to discuss AI confidently.
+
+Fortunately, you don't need to be a rocket scientist to talk intelligently about AI. And you may not realize it, but you likely interact with AI multiple times a day as you live your life. So relax, take a deep breath, and get started.
+
+'''
+
+=== Why should you care about AI?
+
+image::stock-image.jpg[So, the million-dollar question: Why is AI so important now?]
+
+=== Why should you care about AI?
+
+With AI, computers can now understand human language and show some kind of reasoning capabilities AI provides a mechanism for automating the kinds of tasks that were the sole domain of humans The level of complexity is expanding. The machines are getting better and can adapt quickly based on the data they collect.AI is important now because Moore's law has continued to apply to the computing industry, and humanity now has enough computing power at its disposal to approximate human intelligence.
+
+Moore's law: The number of transistors in an integrated circuit doubles approximately every two years It is named after Gordon Moore, later the co-founder of Intel, who made this prediction in 1975.
+
+Although Moore's prediction referred specifically to the number of transistors on a microchip, Moore's law has also proven to be accurate with regard to the capabilities of hardware in general and other technology. Advancements such as the reduction in the cost of microprocessors the increase in memory capacity, the improvement of sensors and the number and size of pixels in digital cameras and screens are strongly linked to Moore's law.
+
+=== What this means for you
+
+Now that technology has improved to the point that AI is viable, AI is changing how we live and work in many ways Many experts have compared the significance of AI and the impact it's expected to have to the internet and some believe it will have an even greater impact. Whether you realize it or not, AI is likely already affecting your everyday life, and it is likely to bring changes to your work as well, regardless of your job or role.Organizations across a variety of industries are investing heavily in AI and betting vast sums The next section of the course takes a look at the sheer size of the AI market.
+
+'''
+
+=== The AI market opportunity
+
+AI is on almost everyone's mind right now, and it has rapidly become critical for businesses and organizations AI-related technology has become more readily available and accessible to businesses of all sizes
+
+As a consequence, there is an increase in demand for AI workloads and investments in AI technologies Businesses are ready to use their ever-increasing data to predict business results and automate their operations
+
+=== AI is not a 'nice to have'it's a 'must have'
+
+Across all verticals AI is being adopted horizontally across all industries
+
+A 2025 survey (https://www.thomsonreuters.com/en-uspostscorporatesc-suite-survey-2025/) of C-suite executives conducted by the Thomson Reuters Institute revealed that 85% believe AI will have a transformational or high impact on their businesses over the next five years
+
+According to recent surveys 78% of enterprise organizations report using AI in at least one business function, an increase from 55 just a year prior. The use of generative AI has been particularly explosive, with 71% of organizations now regularly using it, up from 33 in 2023.
+
+Keep in mind, the aggregate figures mentioned above do not reflect the uneven pattern of adoption across industries company sizes and functional areas
+
+=== The market for AI solutions is large and growing larger
+
+It's probably no surprise that the AI market is large, but just how large is it?According to a report from Gartner (https://www.gartner.com/en/newsroom/press-releases/2025-09-17-gartner-says-worldwide-ai-spending-will-total-1-point-5-trillion-in-2025), worldwide spending on AI is predicted to total nearly 1.5 trillion in 2025 and exceed 2 trillion in 2026. These figures represent a comprehensive view of the entire AI-enabled economy, including not only direct spending on AI software and services but also the hardware and infrastructure required to support it.Although other estimates tend to be more conservative and based on targeted aspects of the AI market, there is broad agreement among analysts and experts that the AI market is large and growing larger. For example, IDC (https://info.idc.com/futurescape-generative-ai-2025-predictions.html) forecasts that global enterprises will invest 307 billion on direct AI solutions in 2025 and expects that figure to grow to 632 billion by 2028.
+
+=== That's a lot of money!
+
+It is And some of that money will be spent by your employers partners customers colleagues and competitors The vast sums spent on AI reflect the degree of potential transformation that AI is bringing to the world.
+
+As of this writing, some analysts and observers have suggested that there is an AI-related financial 'bubble' (a period of speculative frenzy in which asset prices rise to unsustainable levels far exceeding their fundamental value). Although it's impossible to say for sure whether AI-related assets are financially overvalued at this moment, the idea that there may be an 'AI bubble' is distinct from the concept of AI as a transformational technology with the potential to have a greater impact on society than even the internet or cellular phones And, as with previous bubbles (e.g., the 'dotcom bubble', if there is in fact an AI bubble, there will be companies that first survive and then thrive after the downturn passes
+
+'''
+
+=== What is artificial intelligence (AI)?
+
+image::stock-image.jpg[There are many definitions of AI; scholars and computer scientists still debate over the finer points of what the term means But for our purposes let's start with the basics]
+
+It might help to think of AI as a 'smart' computer program that learns from experience and can make decisions like a human would, but usually much faster and with more data. AI is used in things like voice assistants (such as Siri or Alexa), self-driving cars and in retail applications that recommend products similar to those you have purchased in the past. AI tries to mimic human thinking to solve problems and perform tasks that normally require human intelligence. Consider a user who interacts with ChatGPT. The user enters a text prompt and gets a result. But what happens in between? Between the prompt and the result the user receives is matha lot of math. Mass quantities of data are fed into computationally expensive algorithms
+
+=== A person without a technical background asks 'What is AI?'
+
+How should you respond? Begin by defining AI in simple terms'Artificial intelligence is a branch of computer science that enables machines to perform tasks that typically require human intelligence.'
+
+image::WhatIsAI_1a.jpg[What is artificial intelligence? Graphic includes three definitions of artificial intelligence. First, from MIT:]
+
+Suppose your conversation partner needs a more robust definition? Consider incorporating the following information into your conversation:Artificial intelligence is a multidisciplinary branch of computer science that simulates human intelligence processes in machines These processes include:Learning (gaining information and rules for using the information)Reasoning (applying rules to arrive at conclusionsSelf-correction AI systems can perform tasks that usually require human intelligence, such as visual perception, speech recognition, decision-making, and language translation. In other words AI describes systems capable of acquiring knowledge and applying insights to enable problem solving.
+
+AI is a vast topic. This course is meant to introduce you to the basics of AI; it will not make you an AI expert. The goal of this course is to enable you to have an informal conversation about AI with colleagues customers and friends
+
+'''
+
+=== What is machine learning?
+
+image::WhatisML1a.png[Machine learning is a subset of AI: ML empowers computers to learn from data and improve their performance with time. Training statistical models to extract knowledge and patterns from data. Training is done using supervised or unsupervised learning ML models can make accurate predictions and decisions]
+
+Machine learning (ML) is a subcategory of AI that uses algorithms to identify patterns and make predictions within a set of data. This data can consist of numbers text, or even photos Under ideal conditions ML allows humans to interpret data more quickly and more accurately than they would ever be able to on their own. For instance, ML can be used to anticipate consumer buying patterns based on seasonal factors website traffic, and so forth.
+
+Artificial intelligence (AI) and machine learning (ML) are often linked in conversation. This typically is abbreviated as AI/ML.
+
+'''
+
+=== What is deep learning?
+
+Deep learning is a specialized form of ML that teaches computers to process data using an algorithm inspired by the human brain. Deep learning teaches computers to learn through observation, imitating the way humans gain knowledge. A deep learning model uses neural networks with three or more computational layersbut typically hundreds or thousands of layersto train the models
+
+Neural networks benefit greatly from graphics processing unit (GPU) hardware. The reason has to do with how, at their core, neural networks work with mathematics through matrix multiplication. This is the same type of math that video game graphics use; hardware originally meant for making video games more realistic has found new value in the AI era.
+
+image::WhatIsDeepLearning1a.jpg[Deep learning is a subset of machine learning. It makes complex correlations between data and learns from examples and previous mistakes -- Uses algorithms to analyze data with a logical structure. -- Uses neural networks (multi-layered structures of algorithms to identify patterns and classify information. Deep learning requires larger amounts of data compared to machine learning.]
+
+'''
+
+=== Takeaways
+
+Here are the takeaways from this lesson:
+
+* Part of what makes the incredible growth in artificial intelligence (AI) possible is Moore's law, which states that the number of transistors in an integrated circuit doubles approximately every two years Although Moore's prediction referred specifically to the number of transistors on a microchip, Moore's law has also proven to be accurate with regard to the capabilities of hardware in general and other technology.
+
+* The market for AI-related spending is large and only going to grow larger within the next few years
+
+* AI is a branch of computer science that enables machines to perform tasks that typically require human intelligence.
+
+* Machine learning (ML) is a subcategory of AI that uses algorithms to identify patterns and make predictions within a set of data.
+
+* Deep learning is a specialized form of machine learning that teaches computers to process data by using an algorithm inspired by the human brain and neural networks Deep learning teaches computers to learn through observation, imitating the way humans gain knowledge.
+
+'''
+
+=== Knowledge check
+
+[.knowledge-check]
+[source,html]
+----
+<div class="knowledge-check" data-question="Which of the following statements best describes Moore's law?" data-correct="B" data-correct-feedback="Correct! Moore' law states that the number of transistors in an integrated circuit doubles approximately every two years" data-incorrect-feedback="Incorrect. Please try again."">
+  <div class="knowledge-check-question">
+    <strong>Which of the following statements best describes Moore's law?</strong>
+  </div>
+  <div class="knowledge-check-options">
+        <label class="knowledge-check-option"><input type="radio" name="kc-4888" value="A" /> <span>Any piece of software reflects the organizational structure that produced it.</span></label>
+        <label class="knowledge-check-option"><input type="radio" name="kc-4888" value="B" /> <span>The number of transistors in an integrated circuit doubles approximately every two years</span></label>
+        <label class="knowledge-check-option"><input type="radio" name="kc-4888" value="C" /> <span>Software gets slower more rapidly than hardware becomes faster.</span></label>
+        <label class="knowledge-check-option"><input type="radio" name="kc-4888" value="D" /> <span>The value of a network is proportional to the square of the number of connected users</span></label>
+  </div>
+  <button class="knowledge-check-submit">Check Answer</button>
+  <div class="knowledge-check-feedback" style="display: none;"></div>
+</div>
+----
+
+[.knowledge-check]
+[source,html]
+----
+<div class="knowledge-check" data-question="Which of the following statements is most accurate?" data-correct="D" data-correct-feedback="Correct!" data-incorrect-feedback="Incorrect. Please try again."">
+  <div class="knowledge-check-question">
+    <strong>Which of the following statements is most accurate?</strong>
+  </div>
+  <div class="knowledge-check-options">
+        <label class="knowledge-check-option"><input type="radio" name="kc-3628" value="A" /> <span>Artificial intelligence (AI) is a subset of deep learning.</span></label>
+        <label class="knowledge-check-option"><input type="radio" name="kc-3628" value="B" /> <span>Artificial intelligence (AI) is a subset of machine learning (ML).</span></label>
+        <label class="knowledge-check-option"><input type="radio" name="kc-3628" value="C" /> <span>Machine learning (ML) is a subset of deep learning.</span></label>
+        <label class="knowledge-check-option"><input type="radio" name="kc-3628" value="D" /> <span>Deep learning is a subset of machine learning (ML).</span></label>
+  </div>
+  <button class="knowledge-check-submit">Check Answer</button>
+  <div class="knowledge-check-feedback" style="display: none;"></div>
+</div>
+----
+

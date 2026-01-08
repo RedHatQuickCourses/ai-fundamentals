@@ -1,0 +1,160 @@
+= Inferencing and Optimization
+:navtitle: Inferencing and Optimization
+
+=== Lesson overview
+
+This lesson offers a high-level look at inferencing and its importance to artificial intelligence (AI). It also covers AI optimization, including a brief view of some of the more common optimization techniques
+
+=== Lesson objectives
+
+* Define inferencing in the context of AI.
+
+* Describe the importance of inference servers to AI.
+
+* Explain, at a high level, the trade-offs involved in inferencing.
+
+* Describe the concept of distributed inference.
+
+* Explain the importance of AI optimization.
+
+* Describe, in broad terms AI optimization strategies
+
+'''
+
+=== What is inferencing?
+
+Inferencing, in the context of AI, is the process of running an AI model to generate responses an AI model provides an answer based on data. What some people generally call 'AI' is really the success of AI inference: the final stepthe 'aha' momentin a long and complex process of ML technology. AI inference is where the business value happens and the end result is delivered.Training AI models with sufficient data can help improve AI inference accuracy and speed.
+
+image::WhatIsInferencing.png[Image title 'sWhat is inferencing?'s On the left side of image there is an illustration of a person sitting in front of laptop, labelled 'sUser using AI app's on the right side, there is an image of a robot' face labelled, 'sAI model processing answer with an inference server's, There is an arrow going from the user to the AI model (left to right) labelled, 'sUser submits request's There is an arrow going from the AI model to the user (right to left) labelled, 'sAI returns a response's At the bottom right of image, there is the following text 'sGoal: Meet user expectations Return the most accurate response as fast as possible.'s]
+
+'''
+
+=== What is an inference server?
+
+An inference server is the crucial piece of software infrastructure that hosts a trained ML model, making the AI ready for real-time use by end-users or other applications The server receives an input request (a prompt, a query, or data), feeds it through the trained model, and generates a real-time output or conclusion based on the model' learned patternsthis applies equally to predictive AI (like scoring a recommendation) and generative AI (like creating text or images. While inference servers are necessary for any ML model serving, the current industry focus is heavily centered around the high-demand requirements for LLM serving, which require significant memory and computing resources to perform inference at scale.To infer is to conclude based on evidence. For example, you may see your friend's living room light on, but you don't see them. You may infer that your friend is home, but you don't have absolute evidence to prove it.An LLM also doesn't have absolute evidence about the meaning of a word or phrase (it's a piece of software), so it uses its training as evidence. In a series of calculations based on data, it generates a conclusion. Just like when you calculate that if the light is off, it means your friend is out.To perform effectively, LLMs need extensive storage, memory, and infrastructure to inference at scale.
+
+'''
+
+=== What are the trade-offs regarding inferencing?
+
+When moving from a proof-of-concept to production, the demands of AI solutions change significantly. It' not just about a clever model anymore. Organizations need to pay attention to user expectations the budget, and the level of responsiveness an IT system should have. Optimizing for one thing often impacts another; optimal inference requires identifying the trade-offsUsers expect a lot of their interaction with models that interaction needs to be fast and provide accurate responsesModel inference can be expensive if processing times and length of model responses aren't measured and controlled.All areas of the organization expect business operations won't be affected by low throughput and high latency.
+
+image::ReqsOfEnterpriseAIProductionSystems1.jpg[Image title Requirements of enterprise AI production systems Image subtitle Identifying the trade-offs of inference, Three items of text, First item Need to be fast and accurate in their responses Second item Manage processing times and token output to control const, Third item Deliver high throughput and lower latency for best performance]
+
+'''
+
+=== Scaling LLM inference
+
+Operationalizing AI models at scale is a critical challenge for IT leaders Effectively serving LLMs at scale requires a strategic, full-stack approach that addresses both the model itself and the serving runtime. A single approach is not enough. Achieving high performance and cost efficiency requires a dual focusmanaging resource consumption and maximizing throughput.
+
+'''
+
+=== What is vLLM?
+
+image::vLLM_Logo.png[One approach to achieving inference at scale involves using vLLM.
+*Alt Text:* VLLM logo]
+
+An open source library and serving engine, vLLM (https://github.com/vllm-project/vllm) is designed to significantly accelerate the inference (generation of outputs of LLMs It was originally developed at UC Berkeley and has become a popular solution for deploying LLMs efficiently and cost-effectively in production environments to the extent that many in the AI community consider it the de facto standard for model inferencing.
+
+image::ValueOfVLLM.png[Title The value of vLLM Subtitle Deliver fast, flexible, and scalable inference. Main point 1 Faster response time: vLLM can achieve higher throughput. This translates to processing more tasks or requests within a given amount of time. Main point 2 Reduced hardware costs vLLM offers a more efficient use of resources which is equivalent to fewer GPUs needed to handle the processing of LLMs Main point 3 Efficient memory management: vLLM organizes virtual memory. This translates to handling larger models and longer sequences more effectively within a given hardware setup. Main point 4 Designed for security and scale: Self-hosting an LLM with vLLM provides more control over data privacy and usage, as well as an ability to handle growing demand.]
+
+'''
+
+=== What is distributed inference?
+
+Distributed inference lets AI models process workloads more efficiently by dividing the labor of inference across a group of interconnected devices Think of it as the software equivalent of the saying, 'many hands make light work.' Distributed inference supports a system that splits requests across a fleet of hardware, which can include physical and cloud servers From there, each inference server processes its assigned portion in parallel to create an output. The result is a resilient and observable system for delivering consistent and scalable AI-powered services
+
+=== How does distributed inference work?
+
+Distributed inference works by giving AI models a single, intelligent coordinator that acts as the brain for AI workloads When a new request comes in, distributed inference helps analyze the request and route it to the best part of the hardware system for the job.Large models too many users or latency issues can all hinder performance. Depending on the issue causing the bottleneck, distributed inference uses several strategiesDividing the model: If the model is too large for one GPU, distributed inference uses model parallelism to divide the model across multiple GPUsDividing the data: To handle many users at once, it uses data parallelism and intelligent load balancing to divide the input data across servers This efficiently manages concurrent requestsDividing the inference process To optimize the entire workflow, it uses process disaggregation. This separates the two computational phases that create an inference response (prefill and decode) and runs them in separate environments
+
+'''
+
+=== What is optimization in the context of AI?
+
+image::ImageOptimization.jpg[We hear a lot about groundbreaking AI innovations incredible new models and the amazing things that they can do. But there' a quieter, often overlooked challenge that' crucial for actually making AI work in the real world, and that' optimization. So what exactly is optimization in the context of AI? It' not just about saving money.]
+
+Optimization is about unlocking performance, reliability, and reach. An optimized model delivers faster predictions uses less memory, and can run on more diverse hardware. It extends the life of existing infrastructure and allows AI to serve more users with fewer resources
+
+Think of it this way: Innovation is like designing a sleek, powerful sports car. It' exciting. It' groundbreaking. But optimization, that' making sure that your car can actually drive on everyday roads reliably and affordably without guzzling all your fuel. Remember: If AI can'st scale, it can'st succeed.Training an AI model gets all the headlines It' where the model learns But inference is the day-to-day act of putting that trained model to work, making predictions powering applications in real time. And this is where cost, latency, and user experience really collide.Too often, AI systems are built with massive oversized models chosen purely for their benchmark performance. It' like using a sledgehammer to tighten a loose screw. The result, excessive GPU usage, frustrating latency, and infrastructure costs that quietly add up. And with the rise of huge foundation models like Llama, Mistral, and DeepSeek, the computational cost of inference has gone through the roof. Optimization isn'st just an option anymore; it's essential to make these models usable at scale.
+
+Optimization makes AI powerful and practical.
+
+'''
+
+=== What are some key optimization techniques
+
+Let' take a look at some key optimization techniques
+
+=== Interactive Accordion
+
+*Quantization*
+This reduces the numerical precision of the model, making it smaller and faster. For example, Red Hat' evaluations on Llama models showed a 3.5 times size reduction and a 2.4 time speed up with almost no loss in accuracy.
+
+*Batching*
+This groups multiple inference requests together, improving throughput without changing the model itself.
+
+*Caching*
+This eliminates redundant computations especially useful for repeated or similar queries
+
+*Pruning and distillation*
+These techniques reduce model complexity by removing unnecessary parts or training smaller models to mimic the performance of larger ones
+
+Every optimization involves trade-offs In critical applications such as those related to healthcare or finance, even a tiny shift in accuracy can have major consequences Optimization techniques should be carefully evaluated to properly balance precision with performance goals
+
+'''
+
+=== Takeaways
+
+Here are the takeaways from this lesson:
+
+* Inferencing, in the context of AI, is the process of running an AI model to generate responses an AI model provides an answer based on data.
+
+* An inference server is the piece of software that allows AI applications to communicate with LLMs and generate a response based on data. Inference servers feed the input requests through an ML model and return an output.
+
+* Distributed inference lets AI models process workloads more efficiently by dividing the labor of inference across a group of interconnected devices
+
+* In the context of AI, optimization is about unlocking performance, reliability, and reach.
+
+* Key AI optimization techniques include quantization, batching, caching, and pruning and distillation.
+
+'''
+
+=== Knowledge check
+
+[.knowledge-check]
+[source,html]
+----
+<div class="knowledge-check" data-question="Which of the following statements most accurately describes an inference server?" data-correct="B" data-correct-feedback="Correct! An inference server is a piece of software that allows AI applications to communicate with large language models (LLMs and generate a response based on data." data-incorrect-feedback="Incorrect. Please try again."">
+  <div class="knowledge-check-question">
+    <strong>Which of the following statements most accurately describes an inference server?</strong>
+  </div>
+  <div class="knowledge-check-options">
+        <label class="knowledge-check-option"><input type="radio" name="kc-6434" value="A" /> <span>It is a specialized type of large language model (LLM) exclusively used with agentic AI workflows</span></label>
+        <label class="knowledge-check-option"><input type="radio" name="kc-6434" value="B" /> <span>It is a piece of software that allows AI applications to communicate with large language models (LLMs and generate a response based on data.</span></label>
+        <label class="knowledge-check-option"><input type="radio" name="kc-6434" value="C" /> <span>It is the safest place to store model training data to ensure data sovereignty.</span></label>
+        <label class="knowledge-check-option"><input type="radio" name="kc-6434" value="D" /> <span>It is a dedicated security appliance that performs threat deduction.</span></label>
+  </div>
+  <button class="knowledge-check-submit">Check Answer</button>
+  <div class="knowledge-check-feedback" style="display: none;"></div>
+</div>
+----
+
+[.knowledge-check]
+[source,html]
+----
+<div class="knowledge-check" data-question="Which of the following is an AI optimization technique?" data-correct="C" data-correct-feedback="Correct! Quantization is an AI optimization technique. Other examples of AI optimization techniques include batching, caching, and pruning and distillation." data-incorrect-feedback="Incorrect. Please try again."">
+  <div class="knowledge-check-question">
+    <strong>Which of the following is an AI optimization technique?</strong>
+  </div>
+  <div class="knowledge-check-options">
+        <label class="knowledge-check-option"><input type="radio" name="kc-8279" value="A" /> <span>Containerization</span></label>
+        <label class="knowledge-check-option"><input type="radio" name="kc-8279" value="B" /> <span>Monte Carlo</span></label>
+        <label class="knowledge-check-option"><input type="radio" name="kc-8279" value="C" /> <span>Quantization</span></label>
+        <label class="knowledge-check-option"><input type="radio" name="kc-8279" value="D" /> <span>Conversion rate optimization (CRO)</span></label>
+  </div>
+  <button class="knowledge-check-submit">Check Answer</button>
+  <div class="knowledge-check-feedback" style="display: none;"></div>
+</div>
+----
+

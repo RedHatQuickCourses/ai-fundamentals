@@ -1,0 +1,35 @@
+name: Build PR Preview
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+
+      - name: Install Antora
+        run: npm ci
+
+      - name: Generate Site
+        run: npm run build
+
+      - name: Comment PR
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            const buildDir = 'build/site';
+            if (fs.existsSync(buildDir)) {
+              console.log('Build completed successfully');
+            } else {
+              core.setFailed('Build directory not found');
+            }
