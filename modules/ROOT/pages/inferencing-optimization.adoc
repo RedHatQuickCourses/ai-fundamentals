@@ -124,7 +124,7 @@ Here are the takeaways from this lesson:
 
 [.knowledge-check]
 ++++
-<div class="knowledge-check" data-question="Which of the following statements most accurately describes an inference server?" data-correct="B" data-correct-feedback="Correct! An inference server is a piece of software that allows AI applications to communicate with large language models (LLMs and generate a response based on data." data-incorrect-feedback="Incorrect. Please try again."">
+<div class="knowledge-check" data-question="Which of the following statements most accurately describes an inference server?" data-correct="B" data-correct-feedback="Correct! An inference server is a piece of software that allows AI applications to communicate with large language models (LLMs and generate a response based on data." data-incorrect-feedback="Incorrect. Please try again.">
   <div class="knowledge-check-question">
     <strong>Which of the following statements most accurately describes an inference server?</strong>
   </div>
@@ -141,7 +141,7 @@ Here are the takeaways from this lesson:
 
 [.knowledge-check]
 ++++
-<div class="knowledge-check" data-question="Which of the following is an AI optimization technique?" data-correct="C" data-correct-feedback="Correct! Quantization is an AI optimization technique. Other examples of AI optimization techniques include batching, caching, and pruning and distillation." data-incorrect-feedback="Incorrect. Please try again."">
+<div class="knowledge-check" data-question="Which of the following is an AI optimization technique?" data-correct="C" data-correct-feedback="Correct! Quantization is an AI optimization technique. Other examples of AI optimization techniques include batching, caching, and pruning and distillation." data-incorrect-feedback="Incorrect. Please try again.">
   <div class="knowledge-check-question">
     <strong>Which of the following is an AI optimization technique?</strong>
   </div>

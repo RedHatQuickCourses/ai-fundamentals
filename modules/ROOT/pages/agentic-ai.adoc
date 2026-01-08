@@ -200,7 +200,7 @@ Here are the takeaways from this lesson:
 
 [.knowledge-check]
 ++++
-<div class="knowledge-check" data-question="True or false: An agentic workflow is a structured series of actions managed and completed by AI agents" data-correct="A" data-correct-feedback="True. Generative AI involves the use of deep learning models"'''
+<div class="knowledge-check" data-question="True or false: An agentic workflow is a structured series of actions managed and completed by AI agents" data-correct="A" data-correct-feedback="True. Generative AI involves the use of deep learning models"
 
 === 🧠 Knowledge Check: Which of the following statements most accurately describes a characteristic of agentic AI?
 
@@ -210,7 +210,7 @@ B. It exhibits autonomy, goal-driven behavior, and adaptability. ✅
 C. It can predict the most likely of several potential outcomes but cannot generate new content.
 D. It requires a minimum of four AI agents working in concert.
 
-*✅ Correct Feedback:* Correct! Agentic AI exhibits autonomy, goal-driven behavior, and adaptability." data-incorrect-feedback="Incorrect. Please try again."">
+*✅ Correct Feedback:* Correct! Agentic AI exhibits autonomy, goal-driven behavior, and adaptability." data-incorrect-feedback="Incorrect. Please try again.">
   <div class="knowledge-check-question">
     <strong>True or false: An agentic workflow is a structured series of actions managed and completed by AI agents</strong>
   </div>

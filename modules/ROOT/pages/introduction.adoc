@@ -129,7 +129,7 @@ Here are the takeaways from this lesson:
 
 [.knowledge-check]
 ++++
-<div class="knowledge-check" data-question="Which of the following statements best describes Moore's law?" data-correct="B" data-correct-feedback="Correct! Moore' law states that the number of transistors in an integrated circuit doubles approximately every two years" data-incorrect-feedback="Incorrect. Please try again."">
+<div class="knowledge-check" data-question="Which of the following statements best describes Moore's law?" data-correct="B" data-correct-feedback="Correct! Moore' law states that the number of transistors in an integrated circuit doubles approximately every two years" data-incorrect-feedback="Incorrect. Please try again.">
   <div class="knowledge-check-question">
     <strong>Which of the following statements best describes Moore's law?</strong>
   </div>
@@ -146,7 +146,7 @@ Here are the takeaways from this lesson:
 
 [.knowledge-check]
 ++++
-<div class="knowledge-check" data-question="Which of the following statements is most accurate?" data-correct="D" data-correct-feedback="Correct!" data-incorrect-feedback="Incorrect. Please try again."">
+<div class="knowledge-check" data-question="Which of the following statements is most accurate?" data-correct="D" data-correct-feedback="Correct!" data-incorrect-feedback="Incorrect. Please try again.">
   <div class="knowledge-check-question">
     <strong>Which of the following statements is most accurate?</strong>
   </div>
