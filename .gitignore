@@ -109,3 +109,6 @@ dist
 
 # Temporary template
 temp-template/
+
+# Python utility scripts (keep locally, don't commit)
+*.py
