@@ -17,9 +17,6 @@ Even if you've never sought out AI, it's likely that you interact with it in you
 
 === What is predictive AI?
 
-image::PredictiveAI_2025.png[Predictive AI is one of the most common types of AI used in business applications It has been in use for many years and predicts or forecasts outcomes based on historical data.
-*Alt Text:* Predictive AI predicts or forecasts outcomes based on historical data. Predict credit risk or fraud Forecast demand Offer product recommendations More accurately determine patient risk scoring Predict high-risk illnesses]
-
 Predictive AI that relies on advanced statistical processing methods and uses a different kind of mathematics than neural networks Statistical processing doesn't get the same kind of performance boost from GPUs that neural networks do. Neural networks can also be used to find complex patterns needed to make these predictionsA relatively mature technology, predictive AI is widely used in a variety of sectors For example, predictive AI is often used to forecast credit risk or fraud in the financial services industry and to identify which patients are at the most risk for certain illnesses in the medical sector.Let's look at some everyday examples of predictive AI.
 
 '''
@@ -30,31 +27,34 @@ Whether you realize it or not, you likely interact with predictive AI daily.
 
 To learn more about everyday examples of predictive AI, click either the right-facing arrow or the red Start button below.
 
-=== 📋 Interactive Process
+=== Everyday examples of predictive AI
 
-*Introduction:* Everyday examples of predictive AI
-Let' take a quick look at some everyday examples of predictive AI.
+Let's take a quick look at some everyday examples of predictive AI:
 
-*Summary:* Continue to the next topic.
-Click the Continue bar below to progress to the next topic.
-
-*Step 3:* Text autocompletion: Google 
+* *Text autocompletion: Google* +
 Every time you use Google to conduct a web search, you interact with AI. When you enter text into Google's search box, Google uses AI to offer you autocompletion options for your search as you type. Google's AI bases its predictive search completion on the history of previous searches by other users among other data.
 
-*Step 4:* Text autocompletion: Text messaging
-Similar to Google searches the autocomplete functionality available with most SMS messaging programs uses AI to predict which word the user is likely to enter next.
+* *Text autocompletion: Text messaging* +
+Similar to Google searches, the autocomplete functionality available with most SMS messaging programs uses AI to predict which word the user is likely to enter next. Notice how the iPhone user is offered three options for words that seem likely to follow 'Can't' in this context. The messaging application on the iPhone is using AI to predict which word the user is likely to enter next.
 
-*Step 5:* Text autocompletion: Text messaging (cont)
-Notice how the iPhone user is offered three options for words that seem likely to follow 'Can't' in this context. The messaging application on the iPhone is using AI to predict which word the user is likely to enter next.
+* *Online retailer recommendations* +
+When retail websites such as Amazon offer you recommendations of items to purchase, that's another example of predictive AI at work. Amazon makes recommendations based on customers' interests and what they have purchased before, and how they have rated their previous purchases. In addition, Amazon's AI has access to data regarding other customers' purchases and uses that to provide targeted recommendations. For example, suppose you are purchasing an iPad on Amazon, and place the iPad in your cart. Amazon then indicates that other customers who purchased iPads also purchased a certain screen protector and a particular type of case. Based on this recommendation, you add the screen protector and case to your cart.
 
-*Step 6:* Online retailer recommendations
-When retail websites such as Amazon offer you recommendations of items to purchase, that's another example of predictive AI at work.Amazon makes recommendations based on customersss interests and what they have purchased before, and how they have rated their previous purchases In addition, Amazon's AI has access to data regarding other customersss purchases and uses that to provide targeted recommendations For example, suppose you are purchasing an iPad on Amazon, and place the iPad in your cart. Amazon then indicates that other customers who purchased iPads also purchased a certain screen protector and a particular type of case. Based on this recommendation, you add the screen protector and case to your cart.
+* *Movie and music recommendations* +
+Streaming applications such as Netflix and Spotify use predictive AI to make viewing or listening recommendations. Suppose you just watched the 1979 film Alien on Netflix, and the application now suggests you watch Mad Max: Fury Road. How does Netflix arrive at this recommendation? Put very simply, data regarding the film you watched (as well as data regarding your viewing preferences and those of other Netflix users including other users who watched Alien) is fed into a model that data scientists have created or trained.
 
-*Step 7:* Movie and music recommendations
-Streaming applications such as Netflix and Spotify use predictive AI to make viewing or listening recommendations Suppose you just watched the 1979 film Alien on Netflix, and the application now suggests you watch Mad Max: Fury Road. How does Netflix arrive at this recommendation? Put very simply, data regarding the film you watched (as well as data regarding your viewing preferences and those of other Netflix users including other users who watched Alien) is fed into a model that data scientists have created or trained.
+=== What's "data science"?
 
-*Step 8:* “Data scientists”? What’s “data science”?
-Data science is an interdisciplinary field that leverages mathematical, statistical, and computational techniques to extract knowledge and insights from structured and unstructured data. It encompasses various processes from data collection and cleaning to analysis and visualization, ultimately driving decision making in a wide range of domains Data scientists extract knowledge and insight from data and help organizations ask the right questions about what they need AI models to do. Examples of activities data scientists engage in include:Data collection from various sources including databases APIs files and streaming platformsData cleaning to remove errors handle missing values and format the data for analysis Selection of the appropriate AI models or algorithms and training these models using data and evaluate their performance using a variety of metricsEvaluation and validation of the models to confirm that they perform as expectedData scientists use various tools to accomplish their tasks including such things as Jupyter Notebooks PyTorch, and TensorFlow.Data scientists are among the people most likely to be working with Red Hat's AI solutions They tend to not be interested in underlying infrastructure concerns in the same way that IT operations personnel are.
+Data science is an interdisciplinary field that leverages mathematical, statistical, and computational techniques to extract knowledge and insights from structured and unstructured data. It encompasses various processes from data collection and cleaning to analysis and visualization, ultimately driving decision making in a wide range of domains. Data scientists extract knowledge and insight from data and help organizations ask the right questions about what they need AI models to do.
+
+Examples of activities data scientists engage in include:
+
+* Data collection from various sources including databases, APIs, files, and streaming platforms
+* Data cleaning to remove errors, handle missing values, and format the data for analysis
+* Selection of the appropriate AI models or algorithms and training these models using data and evaluate their performance using a variety of metrics
+* Evaluation and validation of the models to confirm that they perform as expected
+
+Data scientists use various tools to accomplish their tasks including such things as Jupyter Notebooks, PyTorch, and TensorFlow. Data scientists are among the people most likely to be working with Red Hat's AI solutions. They tend to not be interested in underlying infrastructure concerns in the same way that IT operations personnel are.
 
 '''
 
